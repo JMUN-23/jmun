@@ -32,19 +32,5 @@ function reveal() {
 
 }
 
-function btnrevel() {
-	var topbtn = document.getElementsByClassName('topbtn');
 
-	for (var i = 0; i < topbtn.length; i++) {
-
-		var windowheight = window.innerHeight;
-		var revealtop = topbtn[i].getBoundingClientRect().top;
-		var revealpoint = 150;
-
-		if (revealtop < windowheight - revealpoint) {
-			topbtn[i].classList.remove('hidden');
-		}
-
-	}
-}
 

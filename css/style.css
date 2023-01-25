@@ -12,27 +12,14 @@ body {
     min-height: 100vh;
     width: 100vw;
     background-color: #000;
+    color: #fff;
     overflow-x: hidden;
 }
-
-.topbtn {
-    position: sticky;
-    margin-left: 1280px;
-    bottom: 20px;
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
-.topbtn a {
-    all: unset;
-    padding: 8px 15px;
-    background-color: rgb(12, 12, 12);
-    color: white;
-    border-radius: 30%;
-    font-size: 15px;
-}
-
-.hidden {
-    display: none;
-}
 
 /* NAVBAR */
 .navvbar{
@@ -214,10 +201,15 @@ body {
     opacity: 0;
     z-index: 20;
 }
-
+h1.reveal{
+    background-image: linear-gradient(90deg, #5fc9fa, #fa8b9f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .reveal {
     opacity: 0.5;
     transition: all 0.5s ease-in-out;
+
 }
 
 .reveal.active {
@@ -321,6 +313,7 @@ body {
 
 .page-content {
     padding: 3em;
+    padding-bottom: 15px;
     background: #000;
     min-height: 100vh;
     width: 100%;
@@ -331,7 +324,7 @@ body {
 }
 
 .Letter-Container {
-    margin-top: 10vh;
+    margin-top: 50vh;
     margin-bottom: 7em;
     padding: 3em;
     width: 100%;
@@ -343,6 +336,9 @@ body {
 
 .Letter-Container h2 {
     color: #fff;
+    background-image: linear-gradient(90deg, #5fc9fa, #fa8b9f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 2.5em;
     margin-bottom: 1em;
 }
@@ -353,6 +349,88 @@ body {
     margin-bottom: 1em;
 }
 
+/* Committees reveal section */
+#committees-sec{
+    height: 100vh;
+    margin: 10vh 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: rgba(0, 0, 0);
+}
+
+.committee-imgs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* background: red; */
+    
+} 
+#committees-sec img{
+    width: 10%;
+    
+}
+
+#committees-sec::after{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#img1 {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+#img2 {
+  position: absolute;
+  bottom: 12%;
+  right: 10%;
+}
+
+#img3 {
+  position: absolute;
+  bottom: 9%;
+  left: 30%;
+
+}
+
+#img4 {
+  position: absolute;
+  top: 20%;
+    left: 20%;
+}
+
+#img5 {
+  position: absolute;
+  
+  bottom: 10%;;
+  left: 10%;
+
+}
+
+#img6 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+.heading{
+    font-size: 5rem;
+    /* color: white; */
+    background-image: linear-gradient(90deg, #5fc9fa, #fa8b9f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+}
 /* Carousal */
 
 .carousal a {
@@ -364,16 +442,33 @@ body {
 
     display: none;
 }
-
+.buttons_carousel{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.crlbttn{
+    background: white;
+    padding: 10px 10px;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+}
+.crlbttn ion-icon{
+    font-size: 1.4rem;
+}
 .carousal {
     height: 50vh;
+    margin-top: 20vh;
     width: 100vw;
     display: flex;
     transform-style: preserve-3d;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 20vh;
+    margin-bottom: 5vh;
     position: relative;
     padding-left: 7vh;
 }
@@ -550,8 +645,54 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
+    background-color: rgba(22, 22, 22);
 }
-
+.footer .content{
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 2rem;
+}
+.footleft,.footright, .footmid{
+    padding: 20px;
+}
+.footheading{
+    font-size: 1.69rem;
+    margin: 10px 0;
+    position: relative;
+}
+.footheading::after{
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.btn-foot{
+    all: unset;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+.footlink{
+    margin: 10px 0;
+}
+.foot-bottom{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgba(25, 25, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Responsive  */
 
 @media (max-width: 1200px) {
