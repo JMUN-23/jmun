@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+   <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   <div class="container">
+      <ul>
+         <li><button class="btn" id="all" onclick="hide_all()">All</button></li>
+         <li><button class="btn" id="sec">Secreteriet</button></li>
+         <li><button class="btn" id="ext_sec">Extended Secreteriet</button></li>
+         <li><button class="btn" id="tech" onclick="hide_tech()">Tech Team</button></li>
+         <li><button class="btn" id="pr">PR Team</button></li>
+      </ul>
+      <div id="cards_all">
+      <div class="card">
+         <div class="content">
+               <div class="name">Harsh Govind</div>
+               <div class="post">GOAT</div>
+         </div>   
+      </div>
+      <div class="card">
+         <div class="content">
+               <div class="name">Harsh Govind</div>
+               <div class="post">GOAT</div>
+         </div>   
+      </div>
+      <div class="card">
+         <div class="content">
+               <div class="name">Harsh Govind</div>
+               <div class="post">GOAT</div>
+         </div>   
+      </div>
+      <div class="card">
+         <div class="content">
+               <div class="name">Harsh Govind</div>
+               <div class="post">GOAT</div>
+         </div>   
+      </div>
+      <div class="card">
+         <div class="content">
+               <div class="name">Harsh Govind</div>
+               <div class="post">GOAT</div>
+         </div>   
+      </div>
+      <div class="card">
+         <div class="content">
+               <div class="name">Harsh Govind</div>
+               <div class="post">GOAT</div>
+         </div>   
+      </div>
+      <div class="card">
+         <div class="content">
+               <div class="name">Harsh Govind</div>
+               <div class="post">GOAT</div>
+         </div>   
+      </div>
+      <div class="card">
+         <div class="content">
+               <div class="name">Harsh Govind</div>
+               <div class="post">GOAT</div>
+         </div>   
+      </div>
+      </div>
+      <div id="cards_Tech">
+         <div class="card">
+            <div class="content">
+                  <div class="name">Harsh Govind</div>
+                  <div class="post">GOD</div>
+            </div>   
+         </div>
+         <div class="card">
+            <div class="content">
+                  <div class="name">Harsh Govind</div>
+                  <div class="post">GOD</div>
+            </div>   
+         </div>
+         <div class="card">
+            <div class="content">
+                  <div class="name">Harsh Govind</div>
+                  <div class="post">GOD</div>
+            </div>   
+         </div>
+         <div class="card">
+            <div class="content">
+                  <div class="name">Harsh Govind</div>
+                  <div class="post">GOD</div>
+            </div>   
+         </div>
+         <div class="card">
+            <div class="content">
+                  <div class="name">Harsh Govind</div>
+                  <div class="post">GOD</div>
+            </div>   
+         </div>
+         <div class="card">
+            <div class="content">
+                  <div class="name">Harsh Govind</div>
+                  <div class="post">GOD</div>
+            </div>   
+         </div>
+         <div class="card">
+            <div class="content">
+                  <div class="name">Harsh Govind</div>
+                  <div class="post">GOD</div>
+            </div>   
+         </div>
+         <div class="card">
+            <div class="content">
+                  <div class="name">Harsh Govind</div>
+                  <div class="post">GOD</div>
+            </div>   
+         </div>
+         </div>
+   </div>
+</body>
+<script>
+   function hide_all() {
+      document.getElementById('cards_Tech').style.display='none'
+      document.getElementById('cards_all').style.display = 'flex'
+   }
+   function hide_tech() {
+      document.getElementById('cards_Tech').style.display = 'flex'
+      document.getElementById('cards_all').style.display = 'none'
+   }
+</script>
+</html>
