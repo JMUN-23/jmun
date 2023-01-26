@@ -1,0 +1,63 @@
+@import url(/Generica.otf);
+@font-face{
+    font-family: Generica;
+    src:  url(/Generica.otf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Generica;
+}
+
+body{
+    height: 100vh;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+#main img{
+    width: 25%;
+}
+#main p{
+    font-size: 29px;
+    font-weight: 100;
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+
+
+.back{
+    padding: 20px;
+    width: 20%;
+    font-size: 24px;
+    border-radius: 200px;
+    cursor: pointer;
+    border: 3px solid white;
+    outline: none;
+    background: black;
+    color: white;
+    font-weight: 500;
+
+    transition: all 0.4s;
+    margin: 10px 0;
+}
+
+.back:hover {
+    background-color: white;
+}
+
+.back:hover a{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
