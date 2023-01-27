@@ -15,7 +15,8 @@ body{
     top: 0;
     letter-spacing: 1px;
     left: 0;
-    padding-top: 10vh;
+    padding: 8vh 0;
+    padding-top: 16vh;
     /* margin: 35px 0; */
     font-weight: 500;
     /* padding: 20px 0; */
@@ -29,6 +30,7 @@ body{
 .container {
     display: flex;
     align-items: center;
+    
     flex-wrap: wrap;
     background-color: #121212;
     width: 80%;
@@ -37,7 +39,14 @@ body{
     flex-direction: column;
     height: 150vh;
 }
-
+.container ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container ul li  button{
+    font-size: 1.2rem;
+}
 #cards_all , #cards_Tech{
     width: 70vw;
     height: 100vh;
@@ -61,26 +70,29 @@ body{
     height: 40vh;
     width: 15vw;
     position: relative;
-    background-image: url("/assets/about/img.jpeg");
-    background-size: 100%;
+    /* background-image: url("/assets/about/img.jpeg");
+    background-size: 100%;    */
     margin: 3px 3px;
-    overflow: hidden;
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     margin-top: 35px;
     transition: 0.5s;
 }
 
 .content {
-    position: absolute;
-    bottom: 0px;
     color: white;
-    padding-left: 10px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), #000);
-
+    /* padding-left: 10px; */
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
     width: 100%;
-    height: 9vh;
-    margin-top: 4px;
+    margin-top: 2px;
+}
+.img-box{
+    width: 100%;
+    position: relative;
+}
+.img-box img{
+    width: 100%;
 }
 
 .container ul{

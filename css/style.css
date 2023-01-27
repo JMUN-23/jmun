@@ -83,15 +83,17 @@ h1.reveal{
 
 .title_ddd{
     position: absolute;
-    top: 130%;
-    left: 36.5%;
+    top: 120%;
+    transform: translate(-50%, -50%);
+    left: 50%;
 }
 
 .title_ddd h1{
     font-family: 'Generica' , sans-serif;
-    font-size: 2.3em;
+    font-size: 2.9em;
     text-align: center;
-    text-justify:auto;
+    letter-spacing: 1px;
+    /* text-justify:auto; */
 }
 
 .Title img {
@@ -227,7 +229,7 @@ h1.reveal{
 
 /* Committees reveal section */
 #committees-sec{
-    height: 70vh;
+    /* height: 70vh; */
     margin: 10vh 0;
     width: 100%;
     display: flex;
@@ -236,7 +238,7 @@ h1.reveal{
     flex-direction: column;
     position: relative;
     /* background: rgba(0, 0, 0); */
-    background: #121212;
+    /* background: #121212; */
 }
 
 .committee-imgs{
@@ -260,7 +262,7 @@ h1.reveal{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
 }
 #img1 {
   position: absolute;
@@ -301,12 +303,14 @@ h1.reveal{
   left: 50%;
 }
 .heading{
-    font-size: 5rem;
+    font-size: 7rem;
     /* color: white; */
     background-image: linear-gradient(90deg, #5fc9fa, #fa8b9f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 1;
+    font-family: var(--generica);
+    letter-spacing: 1px;
 }
 /* Typing effect */
 .container2 {

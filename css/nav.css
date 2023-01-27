@@ -1,7 +1,7 @@
 /* NAVBAR */
 .navvbar{
-    /* background: linear-gradient(rgba(0, 0, 0, 0.1)25%, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.3)75%, rgba(0, 0, 0, 0.4)100%);
-    backdrop-filter: blur(10px); */
+    background: linear-gradient(rgba(0, 0, 0, 0.1)25%, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.3)75%, rgba(0, 0, 0, 0.4)100%);
+    backdrop-filter: blur(10px);
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -13,7 +13,9 @@
     height: 10vh;
     font-family: 'Generica' , sans-serif;
 }
-
+.active-nav{
+    background-color: rgba(22, 22, 22, 0.5);
+}
 .logo {
     display: flex;
     align-items: center;
@@ -30,15 +32,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  #B476FF;
+    background-color:  #3d0b79;
     border-radius: 200px;
-    padding: 0 7px;
 }
 
 .navv a {
     padding: 10px 20px;
     text-decoration: none;
-    color: black;
+    border-radius: 200px;
+    color: white;
     font-family: 'Generica';
     font-weight: 800;
     letter-spacing: 1px;
@@ -55,22 +57,61 @@
 
 .right a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 10px 20px;
     transition: all 0.4s;
     letter-spacing: 1px;
     font-family: Generica;
-    background-color: #B476FF;
+    /* background-color: #B476FF; */
+    background-color: #4a089c;
     border-radius: 200px;
     font-weight: 800;
 }
 
 .right a:hover {
-    border: 2px solid white;
-    color: white;
-    background: black;
+    background-color: #270550;
 }
-
+/* dropdown */
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+ }
+ .menu-content {
+    display: none;
+    position: absolute;
+    top: 4.2vh;
+    background-color: #B476FF;
+    background-color: #3d0b79;
+    min-width: 260px;
+    padding: 4px 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+ }
+ .links,.links-hidden{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+ }
+ .links-hidden{
+    display: block;
+ }
+ .links{
+    display: inline-block;
+ }
+ .links-hidden:hover,.links:hover {
+    /* background-color: black;
+    color: white; */
+ }
+ .dropdown-menu:hover .menu-content {
+    display: block;
+ }
+ .dropdown-menu:hover .menu-btn {
+    /* background-color: white; */
+ }
 /* Hamburger */
 #menu {
     display: none;

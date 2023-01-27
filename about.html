@@ -9,59 +9,75 @@
     <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
-        <!-- Navbar -->
-        <div class="navvbar" style="padding: 10px 2px;">
-            <div class="logo">
-                <img src="./assets/logoTransparent.png" alt="">
-                <a href="home.html"></a>
-            </div>
-            <div id="menu">
-    
-                <div id="menu-bar" onclick="menuOnClick()">
-                    <div id="bar1" class="bar"></div>
-                    <div id="bar2" class="bar"></div>
-                    <div id="bar3" class="bar"></div>
-                </div>
-    
-                <div id="side-nav">
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li> <a href="about.html">About</a></li>
-                        <li><a href="about.html">Partners</a></li>
-                        <li><a href="about.html">Resources</a></li>
-                        <li><a href="committees.html">Committees</a></li>
-                    </ul>
-                </div>
-                <div class="menu-bg" id="menu-bg"></div>
-            </div>
-    
-            <div class="navv">
-                <a href="home.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="about.html">Partners</a>
-                <a href="about.html">Resources</a>
-                <a href="committees.html">Committees</a>
-            </div>
-            <div class="right">
-    
-                <a href="RegisterForm.html">Register</a>
-            </div>
-            </nav>
-            </div>
-<h1 class="sec-heading">About Us</h1>
+    <!-- Navbar -->
+    <div class="navvbar">
+      <div class="logo reveal">
+          <img src="./assets/logoTransparent.png" alt="">
+          <a href="home.html"></a>
+      </div>
+      <div id="menu">
+
+          <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+          </div>
+
+          <div id="side-nav">
+              <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li> <a href="about.html">About</a></li>
+                  <li><a href="partners.html">Partners</a></li>
+                  <li><a href="about.html">Resources</a></li>
+                  <li><a href="committees.html">Committees</a></li>
+              </ul>
+          </div>
+          <div class="menu-bg" id="menu-bg"></div>
+      </div>
+
+      <div class="navv">
+          <a href="home.html" >Home</a>
+          <div class="dropdown-menu">
+              <a href="#" class="menu-btn active-nav">About</a>
+              <!-- <button class="menu-btn">Open <</button> -->
+              <div class="menu-content">
+              <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
+              <a class="links-hidden" href="about.html">Meet The Team</a>
+              </div>
+          </div>
+          
+          <a href="partners.html">Partners</a>
+          <a href="about.html">Resources</a>
+          <a href="committees.html">Committees</a>
+      </div>
+      <div class="right">
+
+          <a href="RegisterForm.html">Register</a>
+      </div>
+      </nav>
+  </div>
+<h1 class="sec-heading">Meet the Team</h1>
             <div class="container">
                 <ul>
                    <li><button class="btn" id="sec" onclick="hide_all()">Secreteriet</button></li>
                    <li><button class="btn" id="ext_sec">Extended Secreteriet</button></li>
                    <li><button class="btn" id="tech" onclick="hide_tech()">Tech Team</button></li>
-                   <li><button class="btn" id="pr">PR Team</button></li>
+                   <!-- <li><button class="btn" id="pr">PR Team</button></li> -->
+                   <!-- <li><button class="btn" id="media">Media Team</button></li> -->
+                   <!-- <li><button class="btn" id="finance">Finance Team</button></li> -->
+                   <!-- <li><button class="btn" id="admin">Admin Team</button></li> -->
+                   <!-- <li><button class="btn" id="creative">Creative Team</button></li> -->
+                   <li><button class="btn" id="advisors">Our Advisors</button></li>
                 </ul>
                 <div id="cards_all">
                 <div class="card">
-                   <div class="content">
-                         <div class="name">Harsh Govind</div>
-                         <div class="post">GOAT</div>
-                   </div>   
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Harsh Govind</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
                 </div>
                 <div class="card">
                    <div class="content">
