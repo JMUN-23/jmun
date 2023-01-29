@@ -15,41 +15,50 @@
             <a href="home.html"></a>
         </div>
         <div id="menu">
-
+  
             <div id="menu-bar" onclick="menuOnClick()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
                 <div id="bar3" class="bar"></div>
             </div>
-
+  
             <div id="side-nav">
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li> <a href="about.html">About</a></li>
-                    <li><a href="about.html">Partners</a></li>
+                    <li><a href="partners.html">Partners</a></li>
                     <li><a href="about.html">Resources</a></li>
                     <li><a href="committees.html">Committees</a></li>
                 </ul>
             </div>
             <div class="menu-bg" id="menu-bg"></div>
         </div>
-
+  
         <div class="navv">
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="about.html">Partners</a>
+            <a href="home.html" >Home</a>
+            <div class="dropdown-menu">
+                <a href="#" class="menu-btn active-nav">About</a>
+                <!-- <button class="menu-btn">Open <</button> -->
+                <div class="menu-content">
+                <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
+                <a class="links-hidden" href="about.html">Meet The Team</a>
+                </div>
+            </div>
+            
+            <a href="partners.html">Partners</a>
             <a href="about.html">Resources</a>
             <a href="committees.html">Committees</a>
         </div>
         <div class="right">
-
+  
             <a href="RegisterForm.html">Register</a>
         </div>
         </nav>
     </div>
 
     <section id="main">
-        <div id="modal">
+        <!-- <div id="modal">
+
             <p>The school believes that all education is within so children are exposed to a wide range of co-curricular and extra-curricular activities to find their interests and perfection within. To develop the 21st century skills of analysis, innovation, creativity, problem solving, collaboration and communication, the school encourages student led initiatives.
                 Some of the student led initiatives are Techvista, Elixir,Akshar Parva, Spoken word poetry, Book Forum, Creative Collaboration Club, Anandotsav, Mridang, Jhankar Beatz and JMUN.
                 The interschool student led initiatives have found recognition among prominent schools of the country and are much awaited events.
@@ -72,17 +81,43 @@
                 In the online competitions we won</li>
                 In the online competitions we won</li>
         </ul>
-        </div>
+        </div> -->
+
         <h1 class="sec-heading">About Seth M.R. Jaipuria School</h1>
         <p class="sec-para">Seth M.R. Jaipuria School, Gomti Nagar, Lucknow began its journey in 1992. It is recognized as one of the creme-de-la-creme names in education in India which provides education from play group to grade 12. We are guided by the Philosophy of Education promulgated by Sri Aurobindo and The Mother. We believe in partnership with our parents to impart value based education to our children that would chisel them into good human beings, for education is not about getting 90% alone; it is about believing in and living the spirit of "Vasudhaiva Kutumbakam"</p>
-        <button class="btn" onclick="show()">Read More..</button>
+        <!-- <button class="btn button" id="six">Read More..</button> -->
+        <div class="modal">
+            <input id="modal__trigger" type="checkbox" />
+            <label for="modal__trigger">Read More...</label>
+            <div class="modal__overlay" role="dialog" aria-labelledby="modal__title" aria-describedby="modal_desc">
+                <div class="modal__wrap">
+                    <label for="modal__trigger">&#10006;</label>
+                    <h2 id="modal__title" class="sec-heading">Seth M.R. Jaipuria School</h2>
+                    <p id="modal__desc">            <p>The school believes that all education is within so children are exposed to a wide range of co-curricular and extra-curricular activities to find their interests and perfection within. To develop the 21st century skills of analysis, innovation, creativity, problem solving, collaboration and communication, the school encourages student led initiatives.
+                        Some of the student led initiatives are Techvista, Elixir,Akshar Parva, Spoken word poetry, Book Forum, Creative Collaboration Club, Anandotsav, Mridang, Jhankar Beatz and JMUN.
+                        The interschool student led initiatives have found recognition among prominent schools of the country and are much awaited events.
+                        To give you an idea of the range of achievements in the last few years for the school</p>
+</p>
+                </div>
+            </div>
+        </div>
     </section>
     <script>
-        let modal = document.getElementById("modal");
+        // let modal = document.getElementById("modal");
 
-        function show(){
-            modal.style.display = "block";
-        }
+        // function show(){
+        //     modal.style.display = "block";
+        // }
+        ('.button').click(function(){
+  var buttonId = $(this).attr('id');
+  $('#modal-container').removeAttr('class').addClass(buttonId);
+  $('body').addClass('modal-active');
+})
+
+$('#modal-container').click(function(){
+  $(this).addClass('out');
+  $('body').removeClass('modal-active');
+}); 
     </script>
 </body>
 </html>

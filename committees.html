@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Committees | JMUN'23</title>
     <link rel="stylesheet" href="css/committees.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
@@ -16,44 +18,52 @@
     <div id="preloader">
 
     </div>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/logoTransparent.png" alt="">
+    <div class="navvbar">
+        <div class="logo reveal">
+            <img src="./assets/logoTransparent.png" alt="">
+            <a href="home.html"></a>
         </div>
         <div id="menu">
-
+  
             <div id="menu-bar" onclick="menuOnClick()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
                 <div id="bar3" class="bar"></div>
             </div>
-
+  
             <div id="side-nav">
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li> <a href="about.html">About</a></li>
-                    <li><a href="about.html">Partners</a></li>
+                    <li><a href="partners.html">Partners</a></li>
                     <li><a href="about.html">Resources</a></li>
                     <li><a href="committees.html">Committees</a></li>
                 </ul>
             </div>
             <div class="menu-bg" id="menu-bg"></div>
         </div>
-
-
-        <div class="nav">
-
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="about.html">Partners</a>
+  
+        <div class="navv">
+            <a href="home.html" >Home</a>
+            <div class="dropdown-menu">
+                <a href="#" class="menu-btn ">About</a>
+                <!-- <button class="menu-btn">Open <</button> -->
+                <div class="menu-content">
+                <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
+                <a class="links-hidden" href="about.html">Meet The Team</a>
+                </div>
+            </div>
+            
+            <a href="partners.html">Partners</a>
             <a href="about.html">Resources</a>
-            <a href="committees.html">Committees</a>
+            <a href="committees.html" class="active-nav">Committees</a>
         </div>
         <div class="right">
-
+  
             <a href="RegisterForm.html">Register</a>
         </div>
-    </nav>
+        </nav>
+    </div>
 
     <section id="hero">
         <h1 class="sec-heading">Committees</h1>
@@ -385,6 +395,58 @@
         <div class="foot-bottom">
             <h1>&copy; JMUN'23 - By Akshat Goel, Harsh Govind and Kshitij Vats</h1>
         </div> -->
+
+        <div class="footer">
+            <div class="contentfoot">
+                <div class="footleft">
+                    <div class="footheading">
+                        Important Information:
+                    </div>
+                    <div class="foottext">
+                        Conference Dates: 14th-16th July, 2022
+                        Registration Fees: ₹ 2000
+                        Seth M.R. Jaipuria School
+                        Vineet Khand, Gomti Nagar,
+                        Lucknow - 226010, U.P., India
+                    </div>
+                </div>
+                <div class="footmid">
+                    <div class="footheading">
+                        Contact Us:
+                    </div>
+                    <div class="foottext">
+                        Email: thejmun@gmail.com
+                        <br>
+                        Phone: +91 7565048506
+                        <br>
+                        <button class="btn-foot ig"><ion-icon name="logo-instagram"></ion-icon></button>
+                        <button class="btn-foot fb"><ion-icon name="logo-facebook"></ion-icon></button>
+                    </div>
+                    <div class="footheading">
+                        Our Partners
+                    </div>
+                    <div class="foottext">
+                        Out Soon!
+                    </div>
+                </div>
+                <div class="footright">
+                    <div class="footheading">
+                        Links:
+                    </div>
+                    <div class="footlink">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="about.html">Partners</a>
+                        <a href="about.html">Resources</a>
+                        <a href="committees.html">Committees</a>
+                        <a href="RegisterForm.html">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <h1>&copy; JMUN'23 - By Akshat Goel, Harsh Govind and Kshitij Vats</h1>
+        </div>
     </section>
 
 

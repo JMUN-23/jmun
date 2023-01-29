@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
@@ -59,129 +60,327 @@
 <h1 class="sec-heading">Meet the Team</h1>
             <div class="container">
                 <ul>
-                   <li><button class="btn" id="sec" onclick="hide_all()">Secreteriet</button></li>
-                   <li><button class="btn" id="ext_sec">Extended Secreteriet</button></li>
-                   <li><button class="btn" id="tech" onclick="hide_tech()">Tech Team</button></li>
+                   <li><button class="btn" id="sec" onclick="show_sec()">Secretariat</button></li>
+                   <li><button class="btn" id="ext_sec" onclick="show_ext_sec()">Extended Secreteriet</button></li>
+                   <li><button class="btn" id="tech" onclick="show_tech()">Tech Team</button></li>
                    <!-- <li><button class="btn" id="pr">PR Team</button></li> -->
                    <!-- <li><button class="btn" id="media">Media Team</button></li> -->
                    <!-- <li><button class="btn" id="finance">Finance Team</button></li> -->
                    <!-- <li><button class="btn" id="admin">Admin Team</button></li> -->
                    <!-- <li><button class="btn" id="creative">Creative Team</button></li> -->
-                   <li><button class="btn" id="advisors">Our Advisors</button></li>
+                   <li><button class="btn" id="advisors" onclick="show_advisors()">Our Advisors</button></li>
                 </ul>
-                <div id="cards_all">
+                <div id="cards_secreteriat">
                 <div class="card">
                   <div class="img-box content">
                      <img src="assets/about/img.jpeg" alt="">
                      <div class="content">
-                        <div class="name">Harsh Govind</div>   
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Secretary General</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Director General</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Director General</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
                         <div class="post">GOAT</div>
                      </div>
                   </div>
                 </div>
                 <div class="card">
-                   <div class="content">
-                         <div class="name">Harsh Govind</div>
-                         <div class="post">GOAT</div>
-                   </div>   
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
                 </div>
                 <div class="card">
-                   <div class="content">
-                         <div class="name">Harsh Govind</div>
-                         <div class="post">GOAT</div>
-                   </div>   
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
+                </div>
+              
+                </div>
+                <div id="cards_ext_secreteriat">
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img2.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Secretary General</div>
+                     </div>
+                  </div>
                 </div>
                 <div class="card">
-                   <div class="content">
-                         <div class="name">Harsh Govind</div>
-                         <div class="post">GOAT</div>
-                   </div>   
+                  <div class="img-box content">
+                     <img src="assets/about/img2.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Director General</div>
+                     </div>
+                  </div>
                 </div>
                 <div class="card">
-                   <div class="content">
-                         <div class="name">Harsh Govind</div>
-                         <div class="post">GOAT</div>
-                   </div>   
+                  <div class="img-box content">
+                     <img src="assets/about/img2.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Director General</div>
+                     </div>
+                  </div>
                 </div>
                 <div class="card">
-                   <div class="content">
-                         <div class="name">Harsh Govind</div>
-                         <div class="post">GOAT</div>
-                   </div>   
+                  <div class="img-box content">
+                     <img src="assets/about/img2.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
                 </div>
                 <div class="card">
-                   <div class="content">
-                         <div class="name">Harsh Govind</div>
-                         <div class="post">GOAT</div>
-                   </div>   
+                  <div class="img-box content">
+                     <img src="assets/about/img2.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
                 </div>
                 <div class="card">
-                   <div class="content">
-                         <div class="name">Harsh Govind</div>
-                         <div class="post">GOAT</div>
-                   </div>   
+                  <div class="img-box content">
+                     <img src="assets/about/img2.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
                 </div>
+              
                 </div>
                 <div id="cards_Tech">
-                   <div class="card">
-                      <div class="content">
-                            <div class="name">Harsh Govind</div>
-                            <div class="post">GOD</div>
-                      </div>   
-                   </div>
-                   <div class="card">
-                      <div class="content">
-                            <div class="name">Harsh Govind</div>
-                            <div class="post">GOD</div>
-                      </div>   
-                   </div>
-                   <div class="card">
-                      <div class="content">
-                            <div class="name">Harsh Govind</div>
-                            <div class="post">GOD</div>
-                      </div>   
-                   </div>
-                   <div class="card">
-                      <div class="content">
-                            <div class="name">Harsh Govind</div>
-                            <div class="post">GOD</div>
-                      </div>   
-                   </div>
-                   <div class="card">
-                      <div class="content">
-                            <div class="name">Harsh Govind</div>
-                            <div class="post">GOD</div>
-                      </div>   
-                   </div>
-                   <div class="card">
-                      <div class="content">
-                            <div class="name">Harsh Govind</div>
-                            <div class="post">GOD</div>
-                      </div>   
-                   </div>
-                   <div class="card">
-                      <div class="content">
-                            <div class="name">Harsh Govind</div>
-                            <div class="post">GOD</div>
-                      </div>   
-                   </div>
-                   <div class="card">
-                      <div class="content">
-                            <div class="name">Harsh Govind</div>
-                            <div class="post">GOD</div>
-                      </div>   
-                   </div>
-                   </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img2.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Secretary General</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img3.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Director General</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img3.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Director General</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img3.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img3.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img3.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
+                </div>
+              
+                </div>
+                <div id="cards_advisors">
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Secretary General</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Director General</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">Director General</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-box content">
+                     <img src="assets/about/img.jpeg" alt="">
+                     <div class="content">
+                        <div class="name">Akshat Goel</div>   
+                        <div class="post">GOAT</div>
+                     </div>
+                  </div>
+                </div>
+              
+                </div>
              </div>
+
+             <div class="footer">
+               <div class="contentfoot">
+                   <div class="footleft">
+                       <div class="footheading">
+                           Important Information:
+                       </div>
+                       <div class="foottext">
+                           Conference Dates: 14th-16th July, 2022
+                           Registration Fees: ₹ 2000
+                           Seth M.R. Jaipuria School
+                           Vineet Khand, Gomti Nagar,
+                           Lucknow - 226010, U.P., India
+                       </div>
+                   </div>
+                   <div class="footmid">
+                       <div class="footheading">
+                           Contact Us:
+                       </div>
+                       <div class="foottext">
+                           Email: thejmun@gmail.com
+                           <br>
+                           Phone: +91 7565048506
+                           <br>
+                           <button class="btn-foot ig"><ion-icon name="logo-instagram"></ion-icon></button>
+                           <button class="btn-foot fb"><ion-icon name="logo-facebook"></ion-icon></button>
+                       </div>
+                       <div class="footheading">
+                           Our Partners
+                       </div>
+                       <div class="foottext">
+                           Out Soon!
+                       </div>
+                   </div>
+                   <div class="footright">
+                       <div class="footheading">
+                           Links:
+                       </div>
+                       <div class="footlink">
+                           <a href="home.html">Home</a>
+                           <a href="about.html">About</a>
+                           <a href="about.html">Partners</a>
+                           <a href="about.html">Resources</a>
+                           <a href="committees.html">Committees</a>
+                           <a href="RegisterForm.html">Register</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="foot-bottom">
+               <h1>&copy; JMUN'23 - By Akshat Goel, Harsh Govind and Kshitij Vats</h1>
+           </div>
           </body>
           <script>
-             function hide_all() {
-                document.getElementById('cards_Tech').style.display='none'
-                document.getElementById('cards_all').style.display = 'flex'
+            let sec = document.getElementById("cards_secreteriat");
+            let ext_sec = document.getElementById("cards_ext_secreteriat");
+            let tech = document.getElementById("cards_Tech");
+            let advisors = document.getElementById("cards_advisors");
+             function show_sec() {
+                sec.style.display = "flex";
+                ext_sec.style.display = "none";
+                tech.style.display = "none"
+                advisors.style.display = "none"
              }
-             function hide_tech() {
-                document.getElementById('cards_Tech').style.display = 'flex'
-                document.getElementById('cards_all').style.display = 'none'
+             function show_ext_sec() {
+               sec.style.display = "none";
+                ext_sec.style.display = "flex";
+                tech.style.display = "none"
+                advisors.style.display = "none"
+             }
+             function show_tech() {
+               sec.style.display = "none";
+                ext_sec.style.display = "none";
+                tech.style.display = "flex"
+                advisors.style.display = "none"
+             }
+
+             function show_advisors(){
+               sec.style.display = "none";
+                ext_sec.style.display = "none";
+                tech.style.display = "none"
+                advisors.style.display = "flex"
              }
           </script>
 

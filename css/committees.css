@@ -27,79 +27,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  background-color: black;
-  background: linear-gradient(rgba(0, 0, 0, 0.1)25%, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.3)75%, rgba(0, 0, 0, 0.4)100%);
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-  backdrop-filter: blur(17.5px);
-  -webkit-backdrop-filter: blur(100px);
-
-  /* border: 1px solid rgba(255, 255, 255, 0.18); */
-
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  /* top: 0;
-    left: 0; */
-  height: 10vh;
-}
-
-.logo {
-  /* width: 50%; */
-  height: 190%;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  margin-left: 20px;
-}
-
-.logo img {
-  /* width: 100%; */
-
-  height: 100%;
-}
-
-.nav {
-  /* width: 80%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav a {
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  transition: all 0.7s ease;
-  font-size: 1.2rem;
-}
-
-.nav a:hover {
-  /* transform: rotateY('360deg'); */
-  transform: rotate3d(1, 0, 0, 360deg);
-  /* transform: rotate3d(); */
-  /* background: rgba(251, 247, 247, 0.1); */
-}
-
-.right a {
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-  transition: all 0.4s;
-  font-weight: bold;
-  background-color: #B476FF;
-  border-radius: 6px;
-}
-
-.right a:hover {
-  border: 2px solid white;
-  color: white;
-  background: black;
-}
 
 .main {
   height: 100vh;
@@ -182,6 +109,9 @@ html {
   /* background-color: rgba(0, 0, 0, 0.8); */
   /* background-color: rgba(243, 233, 233, 0.8); */
   background: #121212;
+  background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(4px);
   /* display: grid;
     grid-template-rows: 20% 60% 20%; */
   position: absolute;
@@ -216,8 +146,8 @@ html {
   width: 35%;
   display: block;
   padding: 10px;
-  background: #B476FF;
-  color: black;
+  background: #3d0b79;
+  color: white;
   font-weight: 600;
   border-radius: 6px;
   font-size: 1.1rem;
