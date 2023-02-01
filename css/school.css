@@ -19,7 +19,7 @@ body{
 
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7)100%, rgba(0, 0, 0, 0.7)0%), url("/assets/school.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)100%, rgba(0, 0, 0, 0.7)0%), url("school.jpg");
 }
 
     .sec-heading {

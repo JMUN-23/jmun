@@ -35,7 +35,7 @@ a{
     position: relative;
     height: 155vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7)100%, rgba(0, 0, 0, 0.7)0%), url(/assets/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)100%, rgba(0, 0, 0, 0.7)0%), url("bg.jpg");
     background-size: 100%;
     background-position: center;
     background-attachment: fixed;
