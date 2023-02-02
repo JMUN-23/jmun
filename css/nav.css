@@ -1,4 +1,10 @@
-/* NAVBAR */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(/Generica.otf);
+@font-face{
+    font-family: Generica;
+    src:  url(/Generica.otf)
+}/* NAVBAR */
 .navvbar{
     background: linear-gradient(rgba(0, 0, 0, 0.1)25%, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.3)75%, rgba(0, 0, 0, 0.4)100%);
     backdrop-filter: blur(10px);
