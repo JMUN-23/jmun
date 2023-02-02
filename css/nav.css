@@ -15,7 +15,7 @@
     position: fixed;
     width: 100%;
     margin: auto;
-    z-index: 100;
+    z-index: 1000;
     height: 10vh;
     font-family: 'Generica' , sans-serif;
 }

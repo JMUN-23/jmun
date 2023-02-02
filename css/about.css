@@ -37,9 +37,9 @@ body{
     
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 80%;
+    width: 100%;
 
-    margin: auto;
+    /* margin: auto; */
     /* height: 130vh; */
 }
 .container ul{
@@ -58,7 +58,8 @@ body{
     flex-wrap: wrap;
     /* align-content: flex-start; */
     justify-content: center;
-    margin: 34px 0;
+    width: 80%;
+    margin: 34px auto;
 }
 
 #cards_Tech, #cards_ext_secreteriat, #cards_advisors{
@@ -72,7 +73,8 @@ body{
 }
 
 .card {
-    width: 25%;
+    /* width: 25%; */
+    height: 40vh;
     cursor: pointer;
     position: relative;
     margin: 3px 3px;
@@ -84,36 +86,10 @@ body{
     background: rgba(255, 255, 255, 0.05);
 	margin: 20px;
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-	border-radius: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	/* border-radius: 15px; */
 	backdrop-filter: blur(10px);
 }
 
-.content {
-    color: white;
-    /* padding-left: 10px; */
-    padding: 10px 20px;
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)); */
-    width: 100%;
-    margin-top: 2px;
-}
-.content .name{
-    font-size: 18px;
-    color: rgba(210, 206, 206, 0.7);
-}
-.content .post{
-    /* color: #6d25c5; */
-}
-.img-box{
-    width: 80%;
-    /* position: relative; */
-}
-.img-box img{
-    width: 100%;
-    border: 1px solid white;
-}
 
 .container ul{
     list-style: none;
@@ -148,23 +124,12 @@ ul li{
 .cards {
     width: 100%;
     height: 100%;
-    display: flex;
-    margin-bottom: 20px;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    align-items: center;
-    justify-content: center;
-    z-index: 1219;
-}
-
-.cards label {
-    position: absolute;
     margin: auto;
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-    height: 400px;
-    width: 560px;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    /* place-items: center; */
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -172,60 +137,35 @@ ul li{
     background-color: black;
     border: 2px black;
 }
+.card::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), #121212);
+}
 
 
 
 .card img {
-    height: 400px;
+    height: 100%;
     width: 100%;
 }
 
 .content{
-    /* background: linear-gradient(to bottom, rgba(0,0,0,0.2), #000); */
-    height: 100%;
-}
-
-.gradiant{
-    display: flex;
-    align-items: center;
+    z-index: 100;
     position: absolute;
-    bottom: 0vh;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2), #000);
-    width: 100%;
-    height: 100%;
-}
-
-.info {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: -16vh;
-    /* background: linear-gradient(to bottom, rgba(0,0,0,0.2), #000); */
-    width: 100%;
-    height: 30vh;
-    transition: 690ms ease-in-out;
-}
-
-.info:hover {
-    bottom: 0px;
-}
-
-.head {
-    position: absolute;
-    top: 2px;
-    text-align: left;
-    font-size: 2rem;
-    padding-left: 3%;
-    font-weight: 500;
+    bottom: 0;
     color: white;
+    padding: 10px 20px;
 }
-
-.agenda {
-    text-align: left;
-    color: black;
-    font-size: 20px;
-    padding-left: 3%;
-    /* font-weight: 150; */
-    margin-top: 10vh;
-    color:  rgb(172, 170, 170);;
+.content h2{
+    font-family: Generica;
+    letter-spacing: 2px;
+}
+.content p{
+    font-family: Generica;
+    letter-spacing: 2px;
 }

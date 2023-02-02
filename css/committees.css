@@ -102,7 +102,7 @@ html {
   /* border-radius: 10px; */
   width: 40%;
   height: fit-content;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 
   color: white;
   /* color: black; */
@@ -115,8 +115,8 @@ html {
   /* display: grid;
     grid-template-rows: 20% 60% 20%; */
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 5%;
+  left: 7%;
   z-index: 1;
 }
 
