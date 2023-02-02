@@ -27,18 +27,19 @@
     align-items: center;
     margin-left: 20px;
     width: 15vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .logo img {
-    height: 15vh;
+    height: 8vh;
 }
 
 .navv {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  #3d0b79;
+    /* background-color:  #3d0b79; */
+    background-color: #270550;
     border-radius: 200px;
 }
 
@@ -69,7 +70,7 @@
     letter-spacing: 1px;
     font-family: Generica;
     /* background-color: #B476FF; */
-    background-color: #4a089c;
+    background-color: #270550;
     border-radius: 200px;
     font-weight: 800;
 }
@@ -85,9 +86,9 @@
  .menu-content {
     display: none;
     position: absolute;
-    top: 4.2vh;
+    top: 100%;
     background-color: #B476FF;
-    background-color: #3d0b79;
+    background-color: #270550;
     min-width: 260px;
     padding: 4px 0;
     border-bottom-right-radius: 10px;

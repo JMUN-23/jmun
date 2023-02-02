@@ -68,39 +68,38 @@ h1.reveal{
 
 .header-container {
     position: absolute;
-    height: 50vh;
+    height: 100vh;
     z-index: 10;
     top: 0;
     left: 0;
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: top;
+    justify-content: center;
     flex-direction: column;
     padding: 2em;
     padding-top: 3em;
 }
 
-.title_ddd{
-    position: absolute;
-    top: 120%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-}
 
+.title_ddd{
+    margin: 5px 0;
+}
 .title_ddd h1{
     font-family: 'Generica' , sans-serif;
-    font-size: 2.9em;
+    font-size: 3.5em;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     /* text-justify:auto; */
 }
-
+.Title{
+    margin-bottom: 20px;
+}
 .Title img {
     /* position: absolute;
     top: 55%;
     /* right: 20%; */
-    height: 29em;
+    height: 20em;
     width: auto;
     cursor: pointer;
 }
@@ -376,18 +375,22 @@ h1.reveal{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 .crlbttn{
-    background: white;
-    /* padding: 10px 10px; */
+    /* background: #3d0b79; */
+    padding: 20px;
     background: black;
-    color: #fff;
+    color: white;
     cursor: pointer;
-    border: 0px;
+    margin: 0 20px;
+    outline: none;
+    border-radius: 500px;
+
 }
 .crlbttn ion-icon{
-    font-size: 3.9em;
+    font-size: 3.3em;
+    /* color: #fff; */
 }
 
 .crl_bg{
@@ -426,7 +429,7 @@ h1.reveal{
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
     height: 400px;
-    width: 600px;
+    width: 560px;
     overflow: hidden;
 }
 
@@ -478,16 +481,21 @@ h1.reveal{
     top: 2px;
     text-align: left;
     font-size: 2rem;
-    padding-left: 3%;
+    padding-left: 4%;
+    font-family: var(--generica);
     font-weight: 500;
     color: white;
 }
-
+.head a{
+    font-family: var(--generica);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 .agenda {
     text-align: left;
     color: black;
     font-size: 20px;
-    padding-left: 3%;
+    padding-left: 4%;
     /* font-weight: 150; */
     margin-top: 10vh;
     color:  rgb(172, 170, 170);;
