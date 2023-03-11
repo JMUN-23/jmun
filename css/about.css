@@ -5,6 +5,9 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
+html, body{
+    overflow-x: hidden;
+}
 body{
     background-color: black;
 }
@@ -46,6 +49,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .container ul li  button{
     font-size: 1.2rem;
@@ -73,8 +77,6 @@ body{
 }
 
 .card {
-    /* width: 25%; */
-    height: 40vh;
     cursor: pointer;
     position: relative;
     margin: 3px 3px;
@@ -126,7 +128,7 @@ ul li{
     height: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 25%);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* place-items: center; */
     justify-content: center;
     margin-bottom: 20px;
@@ -168,4 +170,11 @@ ul li{
 .content p{
     font-family: Generica;
     letter-spacing: 2px;
+}
+
+@media only screen and (min-width:321px) and (max-width:768px)
+{
+    .sec-heading{
+        font-size: 3rem;
+    }
 }
