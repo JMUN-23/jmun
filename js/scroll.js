@@ -33,4 +33,39 @@ function reveal() {
 }
 
 
+const reshero = document.getElementById('reshead');
+const resheroBG = document.getElementById('resbg');
+const resheroLogo = document.getElementById('Titleres');
+const resheroTitle = document.getElementById('restitle_ddd');
+
+window.addEventListener('scroll', function () {
+	reshero.style.backgroundSize = 205 + +window.pageYOffset / 10 + '%';
+	resheroBG.style.opacity = 0 + +window.pageYOffset / 150 + '';
+	resheroLogo.style.opacity = 1 - +window.pageYOffset / 200 + '';
+	resheroTitle.style.opacity = 1 - +window.pageYOffset / 200 + '';
+})
+
+window.addEventListener('scroll', resreveal);
+
+function resreveal() {
+	var resreveals = document.getElementsByClassName('resreveal');
+
+	for (var i = 0; i < resreveals.length; i++) {
+
+		var reswindowheight = window.innerHeight;
+		var resrevealtop = resreveals[i].getBoundingClientRect().top;
+		var resrevealpoint = 50;
+
+		if (resrevealtop < reswindowheight - resrevealpoint) {
+			resreveals[i].classList.add('active');
+		}
+		else {
+			resreveals[i].classList.remove('active');
+		}
+	}
+
+
+}
+
+
 
