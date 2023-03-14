@@ -9,6 +9,10 @@
     box-sizing: border-box;
     font-family: Generica;
 }
+
+html, body{
+  overflow-x: hidden;
+}
 body{
     color: white;
     background-color: black;
@@ -420,4 +424,40 @@ a{
   }
   .heading{
     font-weight: bold;
+  }
+
+
+  @media screen and (min-device-width: 168px) and (max-device-width: 1300px) {
+    html{
+      font-size: 10px;
+    }
+    #main{
+      height: auto;
+    }
+    .left{
+      padding: 10px 5px 10px;
+    }
+    .left  .logo img{
+      height: 9.4rem;
+    }
+    .btn-small:hover, .btn-small{
+      width: 60%;
+    }
+    .left{
+      width: 100%;
+    }
+    .sec2{
+      height: auto;
+    }
+    .right2{
+      display: none;
+    }
+    .container{
+      flex-direction: column;
+    }
+    .right-sec{
+      padding: 5px;
+      width: 100%;
+      margin-top: 10px;
+    }
   }

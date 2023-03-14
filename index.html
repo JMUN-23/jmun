@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="shortcut icon" href="./assets/whitelogo.ico" type="image/x-icon">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -35,8 +36,13 @@
 
             <div id="side-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li> <a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li><div class="dropdown-menu">
+                <a href="#" class="menu-btn">About</a>
+                <div class="menu-content">
+                <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
+                <a class="links-hidden" href="about.html">Meet The Team</a>
+                </div>
+            </div>
                     <li><a href="partners.html">Partners</a></li>
                     <li><a href="about.html">Resources</a></li>
                     <li><a href="committees.html">Committees</a></li>
@@ -59,9 +65,7 @@
             <a href="about.html">Resources</a>
             <a href="committees.html">Committees</a>
         </div>
-        <div class="right">
-
-            <a href="RegisterForm.html">Register</a>
+        <div class="right"> <a href="RegisterForm.html">Register</a>
         </div>
         </nav>
     </div>

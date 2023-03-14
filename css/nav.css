@@ -162,7 +162,7 @@
     padding: 7px 0;
 }
 
-#side-nav li a {
+#side-nav li a, a {
     color: white;
     font-size: 18px;
     text-decoration: none;
@@ -218,7 +218,9 @@
 
 @media screen and (min-device-width: 168px) and (max-device-width: 1300px) {
     .navvbar {
-      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       position: fixed;
       
     }
@@ -228,8 +230,7 @@
     }
   
     .navv,
-    .logo,
-    .right {
+    .logo {
       display: none;
     }
 }  

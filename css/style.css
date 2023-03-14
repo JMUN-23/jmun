@@ -198,7 +198,7 @@ h1.reveal {
 
 .countdown .timer .text {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.2rem;
     font-weight: 200;
     font-family: 'Generica', sans-serif;
 }
@@ -523,85 +523,16 @@ h1.reveal {
 }
 
 /* Footer */
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background-color: rgba(22, 22, 22);
-}
 
-.footer .content {
-    display: grid;
-    grid-template-columns: repeat(3, 4fr);
-    gap: 2rem;
-}
-
-.footleft,
-.footright,
-.footmid {
-    padding: 20px;
-}
-
-.footheading {
-    font-size: 1.69rem;
-    margin: 10px 0;
-    position: relative;
-}
-
-.footheading::after {
-    content: " ";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: white;
-}
-
-.footer a {
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
-.btn-foot {
-    all: unset;
-    margin: 10px 0;
-    font-size: 1.5rem;
-}
-
-.footlink {
-    margin: 10px 0;
-}
-
-.foot-bottom {
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-color: rgba(25, 25, 25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /*Responsive*/
 
 @media screen and (min-device-width: 168px) and (max-device-width: 1300px) {
-    .navvbar {
-        display: block;
-        position: fixed;
-
-    }
-
-    #menu {
-        display: block;
-    }
-
+html{
+    font-size: 12px;
+}
     .navv,
     .logo,
-    .right,
     #header {
         display: none;
     }
@@ -753,14 +684,13 @@ h1.reveal {
 
     .rescountdown .timer .resnumb {
         text-align: center;
-        font-size: 50px;
         font-weight: 500;
         /* margin-bottom: 3em; */
     }
 
     .rescountdown .timer .text {
+        font-size: 20px;
         text-align: center;
-        font-size: 25px;
         font-weight: 200;
         font-family: 'Generica', sans-serif;
     }
@@ -850,7 +780,8 @@ h1.reveal {
     }
 
     .Letter-Container{
-        margin-top: 12vh;
+        margin-top: 22vh;
+        padding: 10px 14px;
     }
 
 }

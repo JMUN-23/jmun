@@ -19,17 +19,22 @@
             <a href="index.html"></a>
         </div>
         <div id="menu">
-  
+
             <div id="menu-bar" onclick="menuOnClick()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
                 <div id="bar3" class="bar"></div>
             </div>
-  
+    
             <div id="side-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li> <a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li><div class="dropdown-menu">
+                <a href="#" class="menu-btn">About</a>
+                <div class="menu-content">
+                <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
+                <a class="links-hidden" href="about.html">Meet The Team</a>
+                </div>
+            </div>
                     <li><a href="partners.html">Partners</a></li>
                     <li><a href="about.html">Resources</a></li>
                     <li><a href="committees.html">Committees</a></li>
@@ -60,7 +65,7 @@
         </nav>
     </div>
     <h1 class="sec-heading">
-        GSP Registration 
+        GPS Registration 
     </h1>
     <section class="sec2">
         <div class="left2">
@@ -353,6 +358,12 @@
             });
 
         });
+
+        function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("side-nav").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
     </script>
 </body>
 

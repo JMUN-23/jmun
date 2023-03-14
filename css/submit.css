@@ -1,7 +1,7 @@
 @import url(/Generica.otf);
 @font-face{
     font-family: Generica;
-    src:  url(/Generica.otf)
+    src:  url(/Generica.ttf)
 }
 *{
     margin: 0;
@@ -9,7 +9,9 @@
     box-sizing: border-box;
     font-family: Generica;
 }
-
+html , body{
+    overflow-x: hidden;
+}
 body{
     height: 100vh;
 }
@@ -23,12 +25,13 @@ body{
     color: white;
 }
 #main img{
-    width: 25%;
+    width: 20rem;
 }
 #main p{
     font-size: 29px;
     font-weight: 100;
-    margin-top: -50px;
+    margin-top: 30px;
+    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -60,4 +63,13 @@ a{
     text-decoration: none;
     color: white;
     display: block;
+}
+
+@media screen and (min-device-width: 168px) and (max-device-width: 1300px) {
+    html{
+        font-size: 14px;
+    }
+    .back{
+        width: 80%;
+    }
 }

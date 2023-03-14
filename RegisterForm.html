@@ -19,23 +19,29 @@
       </div>
       <div id="menu">
 
-          <div id="menu-bar" onclick="menuOnClick()">
-              <div id="bar1" class="bar"></div>
-              <div id="bar2" class="bar"></div>
-              <div id="bar3" class="bar"></div>
-          </div>
+        <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
 
-          <div id="side-nav">
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li> <a href="about.html">About</a></li>
-                  <li><a href="partners.html">Partners</a></li>
-                  <li><a href="about.html">Resources</a></li>
-                  <li><a href="committees.html">Committees</a></li>
-              </ul>
-          </div>
-          <div class="menu-bg" id="menu-bg"></div>
-      </div>
+        <div id="side-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li><div class="dropdown-menu">
+            <a href="#" class="menu-btn">About</a>
+            <div class="menu-content">
+            <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
+            <a class="links-hidden" href="about.html">Meet The Team</a>
+            </div>
+        </div>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="about.html">Resources</a></li>
+                <li><a href="committees.html">Committees</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+    </div>
+
 
       <div class="navv">
           <a href="index.html" >Home</a>
@@ -131,35 +137,11 @@
            </div>
           </body>
           <script>
-            let sec = document.getElementById("cards_secreteriat");
-            let ext_sec = document.getElementById("cards_ext_secreteriat");
-            let tech = document.getElementById("cards_Tech");
-            let advisors = document.getElementById("cards_advisors");
-             function show_sec() {
-                sec.style.display = "flex";
-                ext_sec.style.display = "none";
-                tech.style.display = "none"
-                advisors.style.display = "none"
-             }
-             function show_ext_sec() {
-               sec.style.display = "none";
-                ext_sec.style.display = "flex";
-                tech.style.display = "none"
-                advisors.style.display = "none"
-             }
-             function show_tech() {
-               sec.style.display = "none";
-                ext_sec.style.display = "none";
-                tech.style.display = "flex"
-                advisors.style.display = "none"
-             }
-
-             function show_advisors(){
-               sec.style.display = "none";
-                ext_sec.style.display = "none";
-                tech.style.display = "none"
-                advisors.style.display = "flex"
-             }
+            function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("side-nav").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
           </script>
 
 </body>
