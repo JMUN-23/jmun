@@ -297,18 +297,19 @@ h1.reveal {
 
 .crlbttn {
     /* background: #3d0b79; */
-    padding: 20px;
+    padding: 10px;
     background: black;
     color: white;
     cursor: pointer;
     margin: 0 20px;
     outline: none;
     border-radius: 500px;
+    transition: 0.3s ease-in-out;
 
 }
 
 .crlbttn ion-icon {
-    font-size: 3.3em;
+    font-size: 1.4em;
     /* color: #fff; */
 }
 
@@ -347,8 +348,8 @@ h1.reveal {
     margin: auto;
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
-    height: 400px;
-    width: 560px;
+    aspect-ratio: 16/9;
+    width: 50vw;
     overflow: hidden;
 }
 
@@ -361,7 +362,7 @@ h1.reveal {
 
 
 .card img {
-    height: 400px;
+    height: 100%;
     width: 100%;
 }
 
@@ -606,17 +607,20 @@ h1.reveal {
     }
 
     #reshead {
-        display: block;
         position: relative;
         height: 100vh;
         width: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7)100%, rgba(0, 0, 0, 0.7)0%), url("bg.jpg");
-        background-size: 205%;
+        background-size: 250%;
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
         /* padding-top: 10vh; */
         overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     #resbg {
@@ -625,21 +629,22 @@ h1.reveal {
         opacity: 0;
         z-index: 20;
         overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 
     .reshead-cont {
-        position: absolute;
-        /* height: 100vh; */
         z-index: 10;
-        top: 355px;
-        left: 8px;
+        /* transform: translate(9%,-220%); */
         width: 100vw;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 2em;
-        padding-top: 3em;
+        
     }
 
 
@@ -649,7 +654,7 @@ h1.reveal {
 
     .restitle_ddd h1 {
         font-family: 'Generica', sans-serif;
-        font-size: 3.5em;
+        font-size: 3em;
         text-align: center;
         letter-spacing: 2px;
         /* text-justify:auto; */
@@ -660,10 +665,7 @@ h1.reveal {
     }
 
     .Titleres img {
-        /* position: absolute;
-        top: 55%;
-        /* right: 20%; */
-        height: 16em;
+        height: 12em;
         width: auto;
         cursor: pointer;
     }
@@ -681,7 +683,7 @@ h1.reveal {
     /* Responsive Paralax */
 
     .res-content {
-        display: none;
+        display: block;
         margin-top: 10px;
         display: flex;
         align-items: center;
@@ -693,7 +695,7 @@ h1.reveal {
     .res-content h1 {
         color: #fff;
         font-weight: 2000;
-        font-size: 4em;
+        font-size: 3em;
         /* text-transform: uppercase; */
         letter-spacing: 3px;
         opacity: 0;
@@ -726,6 +728,7 @@ h1.reveal {
         display: flex;
         padding-top: 0.9em;
         width: 100%;
+        /* margin-top: 3em; */
         height: 100px;
         flex-wrap: wrap;
         align-items: center;
@@ -743,10 +746,16 @@ h1.reveal {
         justify-content: center;
     }
 
-    .rescountdown .timer .numb {
+    .timer{
+        margin: 12px 0px;
+        margin-top: 7px;
+    }
+
+    .rescountdown .timer .resnumb {
         text-align: center;
         font-size: 50px;
         font-weight: 500;
+        /* margin-bottom: 3em; */
     }
 
     .rescountdown .timer .text {
@@ -755,6 +764,8 @@ h1.reveal {
         font-weight: 200;
         font-family: 'Generica', sans-serif;
     }
+
+
 
     .rescountdown .clone {
         font-size: 55px;
@@ -807,6 +818,7 @@ h1.reveal {
         flex-direction: column;
         margin-bottom: 5vh;
         position: relative;
+        margin-right:9vh;
     }
     .card {
         overflow: hidden;
@@ -814,11 +826,27 @@ h1.reveal {
         border: 2px black;
     }
     
-    
-    
-    .card img {
-        height: 50vh;
-        width: 100%;
-        aspect-ratio: 16/9;
+    .cards label{
+        /* aspect-ratio: 16/9; */
+        /* height: 20vh; */
+        width: 88vw;
     }
+
+    .info{
+        bottom: -22vh;
+
+    }
+
+    .head{
+        font-size: 1.5em;
+    }
+
+    .agenda{
+        margin-top: 2vh;
+    }
+
+    .heading{
+        font-size: 4rem;
+    }
+
 }
