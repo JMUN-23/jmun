@@ -12,6 +12,7 @@ body {
 
 #main {
     background-color: black;
+    padding: 30px;
 }
 
 .img {
@@ -80,7 +81,6 @@ body {
     height: 30vh;
     width: 50vw;
     padding: 10px;
-    overflow: hidden;
 }
 
 .photo img{
@@ -98,5 +98,30 @@ body {
     display: none;
     opacity: 0;
     transition: 1s ease-in-out;
+}
+
+@media screen and (min-device-width: 168px) and (max-device-width: 1300px){
+    .img{
+        background-size: 300%;
+    }
+
+    .photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10vh 0vh;
+        width: 100vw;
+    }
+
+    .photo img{
+        height: 90vh;
+        width: 70vw;
+        margin-bottom: 20px;
+    }
+
+    .heading{
+        font-size: 2rem;
+    }
+
 }
 
