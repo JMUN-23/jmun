@@ -16,9 +16,10 @@
 }
 
 html,
-body{
+body {
     overflow-x: hidden;
 }
+
 body {
     min-height: 100vh;
     width: 100vw;
@@ -236,16 +237,18 @@ h1.reveal {
     background-image: linear-gradient(90deg, #5fc9fa, #fa8b9f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3.5em;
+    font-size: 3em;
     margin-bottom: 1em;
     font-family: var(--generica);
     letter-spacing: 1px;
+    padding-top:20px;
 }
 
 .Letter-Container p {
     color: rgb(172, 170, 170);
     font-size: 1.3em;
     margin-bottom: 1em;
+    padding-bottom: 20px;
 }
 
 /* Committees reveal section */
@@ -272,6 +275,7 @@ h1.reveal {
     z-index: 1;
     font-family: var(--generica);
     letter-spacing: 1px;
+    margin-bottom: 10vh;
 }
 
 /* Carousal */
@@ -378,7 +382,7 @@ h1.reveal {
     bottom: 0vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #000);
     width: 100%;
-    height: 100%;
+    height: 102%;
 }
 
 .info {
@@ -528,9 +532,10 @@ h1.reveal {
 /*Responsive*/
 
 @media screen and (min-device-width: 168px) and (max-device-width: 1300px) {
-html{
-    font-size: 12px;
-}
+    html {
+        font-size: 12px;
+    }
+
     .navv,
     .logo,
     #header {
@@ -575,13 +580,17 @@ html{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        
+
     }
 
 
     .restitle_ddd {
         margin: 5px 0;
     }
+
+    /* .ddd{
+
+    } */
 
     .restitle_ddd h1 {
         font-family: 'Generica', sans-serif;
@@ -666,7 +675,7 @@ html{
         justify-content: center;
         color: #fff;
         opacity: 0;
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     .rescountdown .timer {
@@ -677,8 +686,7 @@ html{
         justify-content: center;
     }
 
-    .timer{
-        margin: 20px 0px;
+    .timer {
         margin-top: 7px;
     }
 
@@ -695,11 +703,6 @@ html{
         font-family: 'Generica', sans-serif;
     }
 
-
-
-    .rescountdown .clone {
-        font-size: 55px;
-    }
 
     h1.resreveal {
         background-image: linear-gradient(90deg, #5fc9fa, #fa8b9f);
@@ -718,22 +721,22 @@ html{
     .resreveal.active {
         opacity: 1;
     }
-    
+
     .crlbttn {
         /* background: #3d0b79; */
         padding: 10px;
         /* margin: 0 20px; */
     }
-    
+
     .crlbttn ion-icon {
         font-size: 2em;
     }
-    
+
     .crl_bg {
         margin-bottom: 15vh;
     }
-    
-    .buttons_carousel{
+
+    .buttons_carousel {
         margin-right: 10vh;
     }
 
@@ -748,40 +751,90 @@ html{
         flex-direction: column;
         margin-bottom: 5vh;
         position: relative;
-        margin-right:9vh;
+        margin-right: 9vh;
     }
+
     .card {
         overflow: hidden;
         background-color: black;
         border: 2px black;
     }
-    
-    .cards label{
+
+    .cards label {
         /* aspect-ratio: 16/9; */
         /* height: 20vh; */
-        width: 88vw;
+        width: 40vw;
+        margin-bottom: 9vh;
     }
 
-    .info{
+    .info {
         bottom: -22vh;
 
     }
 
-    .head{
+    .head {
         font-size: 1.5em;
     }
 
-    .agenda{
-        margin-top: 2vh;
+    .agenda {
+        margin-top: 3vh;
+        font-size: small;
     }
 
-    .heading{
+    .heading {
         font-size: 4rem;
     }
 
-    .Letter-Container{
+    .Letter-Container {
         margin-top: 22vh;
         padding: 10px 14px;
+    }
+
+
+}
+
+@media screen and (max-device-width: 556px) {
+
+    .res-content h1 {
+        font-size: 2em;
+    }
+
+    .res-content h2 {
+        font-size: 1.3em;
+        letter-spacing: 1px;
+
+    }
+
+    .rescountdown {
+        font-size: 1.8em;
+    }
+
+    .rescountdown .timer {
+        width: 80px;
+    }
+
+    .rescountdown .timer .resnumb {
+        font-weight: 400;
+    }
+
+    .cards label{
+        aspect-ratio: 9/16;
+        width: 40vw;
+        overflow: hidden;
+        margin: 40vh 0vh;
+    }
+
+    .content img{
+        aspect-ratio: 16/9;
+        width: 60vw;
+    }
+
+    .buttons_carousel{
+        margin-top:40vh;
+    }
+
+    .heading{
+        margin-bottom: 40vh;
     }
 
 }

@@ -9,7 +9,7 @@
     }
 /* NAVBAR */
 .navvbar{
-    background: linear-gradient(rgba(0, 0, 0, 0.1)25%, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.3)75%, rgba(0, 0, 0, 0.4)100%);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.1)25%, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.3)75%, rgba(0, 0, 0, 0.4)100%); */
     backdrop-filter: blur(10px);
     padding: 10px;
     display: flex;
