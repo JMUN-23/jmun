@@ -220,7 +220,7 @@ h1.reveal {
 
 .Letter-Container {
     margin: 0 10px;
-    margin-top: 10vh;
+    margin-top: 21vh;
     margin-bottom: 3em;
     padding: 3em;
     width: 90%;
@@ -254,8 +254,9 @@ h1.reveal {
 /* Committees reveal section */
 #committees-sec {
     /* height: 70vh; */
+    height: 20vh;
     margin-top: 3vh;
-    margin-bottom: 10vh;
+    margin-bottom: 3vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -737,7 +738,7 @@ h1.reveal {
     }
 
     .buttons_carousel {
-        margin-right: 10vh;
+        margin-right: 4vh;
     }
 
     .carousal {
@@ -796,7 +797,7 @@ h1.reveal {
 @media screen and (max-device-width: 556px) {
 
     .res-content h1 {
-        font-size: 2em;
+        font-size: 2.7em;
     }
 
     .res-content h2 {
@@ -818,10 +819,10 @@ h1.reveal {
     }
 
     .cards label{
-        aspect-ratio: 9/16;
-        width: 40vw;
+        aspect-ratio: 5/7;
+        width: 65vw;
         overflow: hidden;
-        margin: 40vh 0vh;
+        /* margin: 40vh 0vh; */
     }
 
     .content img{
@@ -830,11 +831,11 @@ h1.reveal {
     }
 
     .buttons_carousel{
-        margin-top:40vh;
+        margin-top:18vh;
     }
 
     .heading{
-        margin-bottom: 40vh;
+        margin-bottom: 10vh;
     }
 
 }

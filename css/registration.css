@@ -20,7 +20,7 @@ body{
 
 #main, .sec2{
     padding: 40px;
-    padding-top: 12vh;
+    /* padding-top: 12vh; */
     height: 100vh;
     /* background-color: rgb(197, 100, 44); */
     background-color: black;
@@ -43,7 +43,7 @@ body{
 .left, .right-sec{
     flex-basis: 50%;
     padding: 10px 10px;
-    height: 90vh;
+    height: 95vh;
 }
 
 .left{
@@ -66,7 +66,7 @@ body{
  }
 
 .left .logo img{
-    height: 13.4rem;
+    height: 11.4rem;
     
 }
 
@@ -230,6 +230,7 @@ input{
     display: flex;
     justify-content: right;
     align-items: center;
+    height: 15vh;
   }
 .btn-main{
     text-decoration: none;
@@ -435,7 +436,7 @@ a{
       height: auto;
     }
     .left{
-      padding: 10px 5px 10px;
+      padding: 10px 15px 10px;
     }
     .left  .logo img{
       height: 9.4rem;
@@ -450,14 +451,15 @@ a{
       height: auto;
     }
     .right2{
-      display: none;
+      /* display: none; */
     }
     .container{
       flex-direction: column;
     }
     .right-sec{
-      padding: 20px;
+      padding: 35px;
       width: 100%;
       margin-top: 10px;
+      height: 90vh;
     }
   }
