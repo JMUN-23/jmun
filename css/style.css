@@ -193,13 +193,13 @@ h1.reveal {
 
 .countdown .timer .numb {
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 500;
 }
 
 .countdown .timer .text {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 200;
     font-family: 'Generica', sans-serif;
 }
