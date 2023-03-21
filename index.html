@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME | JMUN'23</title>
+    <title>Home | JMUN'23</title>
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="shortcut icon" href="./assets/whitelogo.ico" type="image/x-icon">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -36,9 +37,15 @@
             <div id="side-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li> <a href="about.html">About</a></li>
+                    <div class="dropdown-menu">
+                        <a href="#" class="menu-btn">About</a>
+                        <div class="menu-content">
+                            <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
+                            <a class="links-hidden" href="about.html">Meet The Team</a>
+                        </div>
+                    </div>
                     <li><a href="partners.html">Partners</a></li>
-                    <li><a href="about.html">Resources</a></li>
+                    <li><a href="resources.html">Resources</a></li>
                     <li><a href="committees.html">Committees</a></li>
                 </ul>
             </div>
@@ -49,20 +56,17 @@
             <a href="index.html" class="active-nav">Home</a>
             <div class="dropdown-menu">
                 <a href="#" class="menu-btn">About</a>
-                <!-- <button class="menu-btn">Open <</button> -->
                 <div class="menu-content">
-                <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
-                <a class="links-hidden" href="about.html">Meet The Team</a>
+                    <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
+                    <a class="links-hidden" href="about.html">Meet The Team</a>
                 </div>
             </div>
-            
+
             <a href="partners.html">Partners</a>
-            <a href="about.html">Resources</a>
+            <a href="resources.html">Resources</a>
             <a href="committees.html">Committees</a>
         </div>
-        <div class="right">
-
-            <a href="RegisterForm.html">Register</a>
+        <div class="right"> <a href="RegisterForm.html">Register</a>
         </div>
         </nav>
     </div>
@@ -73,12 +77,56 @@
                 <div class="Title" id="Title"> <img src="assets/logoTransparent.png" alt="SQ_MAIN">
                 </div>
                 <div style="margin-top: 0px;" id="title_ddd" class="title_ddd">
-                    <h1>Deliberate. Defend. Deliver.</h1>
-                </div>  
+                    <h1 class="">Deliberate. Defend. Deliver.</h1>
+                </div>
             </section>
-
+        </div>
+        <div id="reshead">
+            <div id="resbg"></div>
+            <section class="reshead-cont">
+                <div class="Titleres" id="Titleres"> <img src="assets/logoTransparent.png" alt="SQ_MAIN">
+                </div>
+                <div style="margin-top: 0px;" id="restitle_ddd" class="restitle_ddd">
+                    <h1 class="ddd">Deliberate.<br> Defend.<br> Deliver.</h1>
+                </div>
+            </section>
         </div>
 
+        <div class="res-content">
+            <!-- <h1 class="reveal"> The b</h1> -->
+            <h1 class="resreveal"> Jaipuria <br>Model United Nations<br> 2023</h1>
+            <h2 class="resreveal">The Beginning of Another Decade</h2>
+
+            <div class="rescountdown reveal">
+                <div class="timer resday">
+                    <div class="count">
+                        <div class="resnumb">0</div>
+                        <div class="text">Days</div>
+                    </div>
+                </div>
+                <!-- <div class="clone">:</div> -->
+                <div class="timer reshour">
+                    <div class="count">
+                        <div class="resnumb">0</div>
+                        <div class="text">Hours</div>
+                    </div>
+                </div>
+                <!-- <div class="clone">:</div> -->
+                <div class="timer resmin">
+                    <div class="count">
+                        <div class="resnumb">0</div>
+                        <div class="text">Minutes</div>
+                    </div>
+                </div>
+                <!-- <div class="clone">:</div> -->
+                <div class="timer ressec">
+                    <div class="count">
+                        <div class="resnumb">0</div>
+                        <div class="text">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="header-content">
             <!-- <h1 class="reveal"> The b</h1> -->
@@ -92,21 +140,21 @@
                         <div class="text">Days</div>
                     </div>
                 </div>
-                <div class="clone">:</div>
+                <!-- <div class="clone">:</div> -->
                 <div class="timer hour">
                     <div class="count">
                         <div class="numb">0</div>
                         <div class="text">Hours</div>
                     </div>
                 </div>
-                <div class="clone">:</div>
+                <!-- <div class="clone">:</div> -->
                 <div class="timer min">
                     <div class="count">
                         <div class="numb">0</div>
                         <div class="text">Minutes</div>
                     </div>
                 </div>
-                <div class="clone">:</div>
+                <!-- <div class="clone">:</div> -->
                 <div class="timer sec">
                     <div class="count">
                         <div class="numb">0</div>
@@ -142,16 +190,6 @@
 
         <section id="committees-sec">
             <h1 class="heading">Committees</h1>
-
-            <!-- <div class="committee-imgs">
-
-                <img src="assets/Committee Logo/(1).png" alt="" id="img1">
-                <img src="assets/Committee Logo/(2).png" alt="" id="img2">
-                <img src="assets/Committee Logo/(3).png" alt="" id="img3">
-                <img src="assets/Committee Logo/(4).png" alt="" id="img4">
-                <img src="assets/Committee Logo/(5).png" alt="" id="img5">
-                <img src="assets/Committee Logo/(6).png" alt="" id="img6">
-            </div> -->
         </section>
         <div class="crl_bg">
             <div class="carousal">
@@ -309,7 +347,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <!--<div class="footer">
             <div class="content">
                 <div class="footleft">
                     <div class="footheading">
@@ -359,20 +397,17 @@
         </div>
         <div class="foot-bottom">
             <h1>&copy; JMUN'23 - By Akshat Goel, Harsh Govind and Kshitij Vats</h1>
-        </div>
+        </div>-->
     </section>
     <script src="js/scroll.js"></script>
     <script src="js/countdown.js"></script>
-    <!-- <script src="js/scr_comm.js"></script> -->
     <script src="js/carousal.js"></script>
-    <script src="js/type.js"></script>
-
     <script>
-         function menuOnClick() {
-        document.getElementById("menu-bar").classList.toggle("change");
-        document.getElementById("side-nav").classList.toggle("change");
-        document.getElementById("menu-bg").classList.toggle("change-bg");
-    }
+        function menuOnClick() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("side-nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
     </script>
 </body>
 

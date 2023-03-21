@@ -1,15 +1,17 @@
 /* Footer */
 .footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: white;
     background-color: rgba(22, 22, 22);
     margin-top: 10vh;
+    width: 100vw;
+    display: none;
 }
 .footer .content, .footer .contentfoot{
     display: grid;
-    grid-template-columns: repeat(3, 4fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 .footleft,.footright, .footmid{
@@ -52,4 +54,5 @@
     color: white;
     align-items: center;
     justify-content: center;
+    display: none;
 }

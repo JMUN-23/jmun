@@ -11,55 +11,94 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: Generica; */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  /* font-family: Arial, Helvetica, sans-serif; */
+
 }
 
 body {
-  /* min-height: 100%; */
-  overflow-x: hidden;
   background-color: #000;
 }
-
+html, body{
+  overflow-x: hidden;
+}
 html {
-  /* height: 100%; */
   scroll-behavior: smooth;
 }
 
 
-.main {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  background-color: white;
-  background-color: black;
-  padding: 40px;
-  position: relative;
-}
 
-#hero {
-  height: 50vh;
+.section {
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: url("bg.jpg"); */
+}
+
+.main {
+  
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#UNGA .left{
+  background: url("../assets/Committees BG/United\ Nations\ General\ Assembly.jpg")
+    no-repeat center / cover;
+    
+  }
+  #UNSC .left{
+  background: url("../assets/Committees BG/United\ Nations\ Security\ Council.jpg")
+    no-repeat center / cover;
+
+}
+  #G7 .left{
+  background: url("../assets/Committees BG/G7\ Advisory\ Committee.jpg")
+    no-repeat center / cover;
+
+}
+  #GDS .left{
+  background: url("../assets/Committees BG/Global\ Democracy\ Summit.jpg")
+    no-repeat center / cover;
+
+}
+  #GPS .left{
+  background: url("../assets/Committees BG/Global\ Press\ Summit.jpg")
+    no-repeat center / cover;
+
+}
+  #UNHRC .left{
+  background: url("../assets/Committees BG/United\ Nations\ Human\ Rights\ Council.jpg")
+    no-repeat center / cover;
+
+}
+  #USHCHS .left{
+  background: url("../assets/Committees BG/United\ States\ House\ Committee\ on\ Homeland\ Security.jpg")
+    no-repeat center / cover;
+
+}
+  #LS .left{
+  background: url("../assets/Committees BG/Lok\ Sabha.jpg")
+    no-repeat center / cover;
+
+}
+.left {
+  width: 80%;
+  height: 800px;
+}
+#hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   color: white;
   background-color: #000;
   padding-top: 10vh;
 }
 
-/* #hero::after{
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:rgba(0, 0, 0, 0.6);
-} */
 .sec-heading {
   text-align: center;
   z-index: 1;
@@ -67,7 +106,6 @@ html {
   top: 0;
   letter-spacing: 1px;
   left: 0;
-  /* margin: 35px 0; */
   font-weight: 500;
   padding: 20px 0;
   background-image: linear-gradient(90deg, #5fc9fa, #fa8b9f);
@@ -76,81 +114,15 @@ html {
   font-size: 6rem;
 }
 
-.container {
-  padding: 20px 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 200fr);
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.container a {
-  text-decoration: none;
-  padding: 30px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  margin: 10px 20px;
-  font-size: 1.3rem;
-  font-weight: 800;
-}
-
-.content {
-  /* box-shadow: 2px 5px 5px black; */
-  padding: 40px 30px;
-  /* border-radius: 10px; */
-  width: 40%;
-  height: fit-content;
-  /* transform: translate(-50%, -50%); */
-
-  color: white;
-  /* color: black; */
-  /* background-color: rgba(0, 0, 0, 0.8); */
-  /* background-color: rgba(243, 233, 233, 0.8); */
-  background: #121212;
-  background: rgba(255, 255, 255, 0.05);
-	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(4px);
-  /* display: grid;
-    grid-template-rows: 20% 60% 20%; */
-  position: absolute;
-  top: 5%;
-  left: 7%;
-  z-index: 1;
-}
-
-.content h1 {
-  font-size: 1.3rem;
-  margin: 10px 0;
-  position: relative;
-}
-
-.content p {
-  margin: 20px 0;
-  color: rgb(172, 170, 170);
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-/* .content h1::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    bottom: -8px;
-    left: 0;
-} */
 .btn {
-  width: 35%;
+  width: 45%;
   display: block;
   padding: 10px;
   background: #3d0b79;
   color: white;
   font-weight: 600;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   transition: all 0.4s;
   margin: auto;
   border: none;
@@ -161,23 +133,33 @@ html {
 
 
 
+.right2 {
+  width: 50%;
+  min-height: 400px;
+   background: #121212;
+  background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  color: white;
+  margin-left: -150px;
+  z-index: 1;
+}
+.right2 h1 {
+  font-size: 1.3rem;
+}
+.right2 p {
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
 
 .btn:hover {
   width: 50%;
 }
-
-.imgBox {
-  width: 60%;
-  height: 90vh;
-  vertical-align: middle;
-  /* box-shadow: 2px 5px 5px rgb(227, 223, 223); */
-  position: relative;
-  /* box-shadow: 3px 1px 400px 8px rgba(255,255,255,0.87);
--webkit-box-shadow: 3px 1px 400px 8px rgba(255,255,255,0.87);
--moz-box-shadow: 3px 1px 400px 8px rgba(255,255,255,0.87); */
-
-}
-
 .imgBox::after {
   content: "";
   position: absolute;
@@ -188,294 +170,55 @@ html {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #000);
 }
 
+
 .imgBox h1 {
   position: absolute;
-  bottom: -2px;
-  right: 0;
-  font-size: 2.8rem;
+  bottom: 43px;
+  left: -5px;
+  font-size: 1.8rem;
   color: white;
   z-index: 1;
   padding: 35px;
-  width: 90%;
-  text-align: right;
+  text-align: left;
 }
 
 .bg {
   width: 100%;
   height: 100%;
-  /* border-radius: 10px; */
 }
 
-/* Hamburger */
-#menu {
-  display: none;
-  z-index: 2;
-}
-
-#menu-bar {
-  width: 32px;
-  height: 35px;
-  cursor: pointer;
-}
-
-.bar {
-  height: 5px;
-  width: 100%;
-  background-color: white;
-  display: block;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
-#bar1 {
-  transform: translateY(-4px);
-}
-
-#bar3 {
-  transform: translateY(4px);
-}
-
-#side-nav {
-  transition: 0.3s ease;
-  display: none;
-}
-
-#side-nav ul {
-  padding: 0 22px;
-}
-
-#side-nav li {
-  list-style: none;
-  padding: 7px 0;
-}
-
-#side-nav li a {
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-#side-nav li a:hover {
-  font-weight: bold;
-}
-
-.menu-bg,
-#menu {
-  z-index: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  margin: 30px 0 20px 20px;
-  background: radial-gradient(circle, #B476FF, #B476FF);
-  border-radius: 50%;
-  transition: 0.3s ease;
-}
-
-.change {
-  display: block !important;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
-.change .bar {
-  background-color: white;
-}
-
-.change #bar1 {
-  transform: translateY(4px) rotateZ(-45deg);
-}
-
-.change #bar2 {
-  opacity: 0;
-}
-
-.change #bar3 {
-  transform: translateY(-6px) rotateZ(45deg);
-}
-
-.change-bg {
-  width: 520px;
-  height: 460px;
-  transform: translate(-60%, -91%);
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  background-color: rgba(22, 22, 22);
-  /* position: absolute;
-  bottom: 0; */
-  width: 100%;
-}
-
-.footer .content {
-  display: grid;
-  grid-template-columns: repeat(3, 4fr);
-  gap: 2rem;
-}
-
-.footleft,
-.footright,
-.footmid {
-  padding: 20px;
-}
-
-.footheading {
-  font-size: 1.69rem;
-  margin: 10px 0;
-  position: relative;
-}
-
-.footheading::after {
-  content: " ";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: white;
-}
-
-.footer a {
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-
-.btn-foot {
-  all: unset;
-  margin: 10px 0;
-  font-size: 1.5rem;
-}
-
-.footlink {
-  margin: 10px 0;
-}
-
-.foot-bottom {
-  width: 100%;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  background-color: rgba(25, 25, 25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /* Responsive */
-@media screen and (min-width: 1024px) {}
-
-/* For Tablet View */
-@media screen and (min-device-width: 168px) and (max-device-width: 1300px) {
-  .navbar {
-    display: block;
-  }
-
-  #menu {
-    display: block;
-  }
-
-  .nav,
-  .logo,
-  .right {
+@media only screen and (max-width:400px){
+  .navvbar{
     display: none;
   }
-
-  .sec-heading {
+  .sec-heading{
     font-size: 3rem;
   }
-
-  .imgBox h1 {
-    font-size: 1.3rem;
-  }
-
+}
+@media only screen and (max-width: 1008px) {
   .main {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+  }
+  .section{
+    margin: 10vh 0;
+  }
+  .sec-heading{
+    font-size: 3rem;
+  }
+  .left {
+    width: 100%;
+    height: 600px;
+  }
+  .right2 {
     width: 90%;
-    margin: auto;
-    padding: 19px;
+    margin: 0;
+    margin-top: -100px;
   }
-
-  .content {
-    padding: 20px 30px;
-    height: 68vh;
-    transform: translate(-50%, -61%);
-  }
-
-  .btn {
-    font-size: 10px;
-    width: 60%;
-  }
-
-  .content h1 {
-    font-size: 0.7rem;
-  }
-
-  .content p {
-    font-size: 0.7rem;
-    margin: 30px 0;
-  }
-
-  .imgBox {
-    width: 76%;
+  .left h1{
+    bottom: 98px;
   }
 }
-
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-  .gfg-div {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    color: #fff;
-  }
-}
-
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px) and (orientation: landscape) {
-  .gfg-div {
-    width: 400px;
-    height: 200px;
-    background-color: cyan;
-    color: black;
-  }
-}
-
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {
-  .gfg-div {
-    width: 400px;
-    height: 200px;
-    background-color: chartreuse;
-    color: black;
-  }
-}
-
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  .gfg-div {
-    width: 400px;
-    height: 400px;
-    background-color: brown;
-    color: black;
-  }
-}
-
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  .gfg-div {
-    width: 400px;
-    height: 400px;
-    background-color: cornflowerblue;
-    color: black;
-  }
-}
-
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}

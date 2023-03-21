@@ -1,12 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url(/Generica.otf);
-@font-face{
-    font-family: Generica;
-    src:  url(/Generica.otf)
-}/* NAVBAR */
+@font-face {
+    font-family: "Generica";
+    src: url("https://jmun-23.github.io/jmun/Generica.ttf");
+    src: url("https://jmun-23.github.io/jmun/Generica.ttf") format("ttf"),
+    url("https://jmun-23.github.io/jmun/Generica.otf") format("opentype");
+    }
+/* NAVBAR */
 .navvbar{
-    background: linear-gradient(rgba(0, 0, 0, 0.1)25%, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.3)75%, rgba(0, 0, 0, 0.4)100%);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.1)25%, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.3)75%, rgba(0, 0, 0, 0.4)100%); */
     backdrop-filter: blur(10px);
     padding: 10px;
     display: flex;
@@ -162,7 +165,7 @@
     padding: 7px 0;
 }
 
-#side-nav li a {
+#side-nav li a, a {
     color: white;
     font-size: 18px;
     text-decoration: none;
@@ -181,7 +184,7 @@
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px;
-    background: radial-gradient(circle, #B476FF, #B476FF);
+    background-color: #270550;
     border-radius: 50%;
     transition: 0.3s ease;
 }
@@ -218,7 +221,9 @@
 
 @media screen and (min-device-width: 168px) and (max-device-width: 1300px) {
     .navvbar {
-      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       position: fixed;
       
     }
@@ -228,8 +233,7 @@
     }
   
     .navv,
-    .logo,
-    .right {
+    .logo {
       display: none;
     }
 }  
