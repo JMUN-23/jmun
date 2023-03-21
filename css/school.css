@@ -8,6 +8,7 @@
 
 body {
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 #main {
@@ -45,24 +46,17 @@ body {
 }
 
 .btn {
-    width: 20vh;
-    display: block;
-    padding: 12px;
-    background: #3d0b79;
-    color: white;
-    font-weight: 600;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    transition: all 0.4s;
-    margin: auto;
-    border: none;
-    position: relative;
+    all: unset;
     cursor: pointer;
-    margin-top: 20px;
+    width: 15vh;
+    border: 2px solid white;
+    text-align: center;
+    transition: all 400ms ease-in-out;
 }
 
 .btn:hover {
-    width: 25vh;
+    background-color: blanchedalmond;
+    color: black;
 }
 
 .sec {
