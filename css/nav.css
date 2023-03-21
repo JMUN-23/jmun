@@ -219,6 +219,9 @@
     transform: translate(-60%, -91%);
 }
 
+
+
+
 @media screen and (min-device-width: 168px) and (max-device-width: 1300px) {
     .navvbar {
       display: flex;

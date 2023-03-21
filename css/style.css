@@ -254,9 +254,7 @@ h1.reveal {
 /* Committees reveal section */
 #committees-sec {
     /* height: 70vh; */
-    height: 20vh;
     margin-top: 3vh;
-    margin-bottom: 3vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -527,7 +525,57 @@ h1.reveal {
     background-color: linear-gradient(rgba(0, 0, 0, 0.7)100%, rgba(0, 0, 0, 0.7)0%);
 }
 
-/* Footer */
+/* Carousal */
+
+
+
+.backimage {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+    position: relative;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    user-select: none;
+}
+
+.imagebox {
+    position: relative;
+    width: 40vmin;
+    height: 56vmin;
+}
+
+.image{
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+
+.txt{
+    color: white;
+    position: absolute;
+    font-family: var(--generica);
+    font-size: 1.4em;
+    bottom: 10;
+    left: 10;
+}
+
+.imgbox a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 
 
 /*Responsive*/
@@ -723,72 +771,13 @@ h1.reveal {
         opacity: 1;
     }
 
-    .crlbttn {
-        /* background: #3d0b79; */
-        padding: 10px;
-        /* margin: 0 20px; */
-    }
-
-    .crlbttn ion-icon {
-        font-size: 2em;
-    }
-
-    .crl_bg {
-        margin-bottom: 15vh;
-    }
-
-    .buttons_carousel {
-        margin-right: 4vh;
-    }
-
-    .carousal {
-        height: 20vh;
-        margin-top: 20vh;
-        width: 100vw;
-        display: flex;
-        transform-style: preserve-3d;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 5vh;
-        position: relative;
-        margin-right: 9vh;
-    }
-
-    .card {
-        overflow: hidden;
-        background-color: black;
-        border: 2px black;
-    }
-
-    .cards label {
-        /* aspect-ratio: 16/9; */
-        /* height: 20vh; */
-        width: 40vw;
-        margin-bottom: 9vh;
-    }
-
-    .info {
-        bottom: -22vh;
-
-    }
-
-    .head {
-        font-size: 1.5em;
-    }
-
-    .agenda {
-        margin-top: 3vh;
-        font-size: small;
-    }
-
-    .heading {
-        font-size: 4rem;
-    }
-
     .Letter-Container {
         margin-top: 22vh;
         padding: 10px 14px;
+    }
+
+    .backimage {
+        height: 50vh;
     }
 
 
@@ -836,6 +825,14 @@ h1.reveal {
 
     .heading{
         margin-bottom: 10vh;
+    }
+
+    .backimage{
+        height: 30vh;
+    }
+
+    .heading{
+        font-size: 5rem;
     }
 
 }
