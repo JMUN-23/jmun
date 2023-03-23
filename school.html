@@ -28,7 +28,13 @@
             <div id="side-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li> <a href="about.html">About</a></li>
+                    <div class="dropdown-menu">
+                        <a href="#" class="menu-btn">About</a>
+                        <div class="menu-content">
+                            <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
+                            <a class="links-hidden" href="about.html">Meet The Team</a>
+                        </div>
+                    </div>
                     <li><a href="partners.html">Partners</a></li>
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="committees.html">Committees</a></li>
@@ -384,6 +390,11 @@
         scrollTo(0,350);
     }
 
+    function menuOnClick() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("side-nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
     </script>
 </body>
 
