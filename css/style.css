@@ -443,14 +443,14 @@ h1.reveal {
     height: 56vmin;
 }
 .imgbox::after{
-    content: "";
+content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #000);
-  /* z-index: -1; */
+  z-index: 1;
 }
 .image{
     width: 40vmin;
@@ -465,7 +465,7 @@ h1.reveal {
     font-family: var(--generica);
     font-size: 1.4rem;
     bottom: 10px;
-    z-index: 1;
+    z-index: 2;
     padding: 5px;
 }
 
@@ -474,8 +474,37 @@ h1.reveal {
     height: 100%;
     width: 100%;
     position: absolute;
+    z-index: 3;
 }
 
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.btn{
+    all: unset;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn ion-icon{
+    text-align: center;
+    padding: 12px;
+    border-radius: 50px;
+    transition: all 400ms ease-in-out;
+    position: relative;
+}
+
+.btn ion-icon:hover{
+    background-color: #121212;
+}
 
 /*Responsive*/
 
