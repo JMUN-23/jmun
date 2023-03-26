@@ -26,7 +26,6 @@ body {
 }
 
 .heading {
-    /* text-align: center; */
     z-index: 1;
     font-weight: 1000;
     padding: 20px 0;
@@ -37,13 +36,13 @@ body {
     font-size: 3rem;
     font-family: var(--generica);
     letter-spacing: 2px;
-    padding-left: 0.5em;
+    /* padding-left: 0.5em; */
 }
 
 .text {
     color: rgb(172, 170, 170);
     font-family: var(--roboto);
-    padding: 0px 30px;
+    padding: 0px 40px;
     letter-spacing: 1px;
     /* line-height: 1.1; */
     font-weight: lighter;
@@ -51,7 +50,13 @@ body {
     height: 100%;
 }
 
-
+.heading2{
+    text-align: left;
+    padding: 5px 0;
+}
+.message{
+    margin-top: 20px;
+}
 .btn {
     all: unset;
     cursor: pointer;
@@ -64,7 +69,7 @@ body {
 
 .sec2 {
     margin: 3rem auto;
-    padding: 3em;
+    padding: 2em;
     width: 90%;
     background: #121212;
     border-radius: 7px;
@@ -72,24 +77,19 @@ body {
 
 
 .photo{
-    /* display:inline-flex;
-    align-items: center;
-    grid-area: photo;
-    justify-content: space-around; */
-    /* flex-direction: column; */
     padding: 10px;
-    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .photo img{
-    height: 30vh;
-    float: left;
-    margin: 0 30px;
+    height: 40vh;
+    margin-right: 40px;
     /* width: 15vw; */
 }
 
 .photo p{
-    margin: 40px 0;
+    margin: 20px 0;
     font-size: 2rem;
     font-family: var(--generica);
 }
@@ -100,27 +100,44 @@ body {
     transition: 1s ease-in-out;
 }
 
-@media screen and (min-device-width: 168px) and (max-device-width: 700px){
+@media screen and (min-device-width: 168px) and (max-device-width: 910px){
    html{
     font-size: 12px;
    }
    .sec2{
-    padding: 2px 1px;
+    padding: 19px 1px;
    }
    .img{
     background-size: 300%;
+   }
+   .text{
+    padding: 0 30px;
+   }
+   .photo{
+    flex-direction: column;
+   }
+   .photo img{
+    width: 70vw;
+    margin: 10px 0;
+   }
+   .message{
+    margin-top: 6px;
    }
 
 }
 
 @media screen and (min-device-width: 168px) and (max-device-width: 510px){
-    .photo img{
-        float: none;
-        margin: 0;
+    html{
+        font-size: 10px;
     }
-    .photo{
-        padding: 2px;
-        
+    .text{
+        padding: 0 10px;
+    }
+    .photo img{
+        height: 30vh;
+    }
+    .img{
+        background-size: 500%;
     }
 }
 

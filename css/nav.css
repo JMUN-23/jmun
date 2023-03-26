@@ -171,6 +171,8 @@
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px;
+    backdrop-filter: blur(8px);
+
     background-color: #270550;
     border-radius: 50%;
     transition: 0.3s ease;
