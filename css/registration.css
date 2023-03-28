@@ -88,7 +88,7 @@ body{
 
 .btn-small{
     padding: 10px;
-    width: 30%;
+    width: 28%;
     display: block;
     margin: 40px auto;
     /* background: #d6249f; */
@@ -191,7 +191,10 @@ input{
     pointer-events: none;
     bottom: 5px;
     font-size: 16px;
+    font-weight: bold;
+    color: #121212;
     transition: all 0.3s ease;
+    letter-spacing: 1px;
   }
 
   .input-data .underline{
@@ -434,6 +437,7 @@ a{
     }
     #main{
       height: auto;
+      padding: 20px;
     }
     .left{
       padding: 10px 15px 10px;
@@ -457,7 +461,7 @@ a{
       flex-direction: column;
     }
     .right-sec{
-      padding: 35px;
+      padding: 17px;
       width: 100%;
       margin-top: 10px;
       height: 90vh;

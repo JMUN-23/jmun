@@ -22,13 +22,14 @@ i{
     background-image: linear-gradient(90deg, #5fc9fa, #fa8b9f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 1px;
     padding-top:20px;
 }
 .address{
     display: flex;
     justify-content: center;
+    padding: 10px 0;
 }
 .school{
     font-size: 0.9rem;
@@ -44,7 +45,7 @@ i{
     background-color: rgb(20, 18, 18);
     color: white;
     width: 100vw;
-    height: 35vh;
+    height: 45vh;
     margin-top: 10vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
