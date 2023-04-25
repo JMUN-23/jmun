@@ -45,8 +45,10 @@ i{
     background-color: rgb(20, 18, 18);
     color: white;
     width: 100vw;
-    height: 45vh;
+    overflow: hidden;
+    height: 44vh;
     margin-top: 10vh;
+    padding-bottom: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
