@@ -45,28 +45,28 @@ html {
   justify-content: center;
 }
 #UNGA .left{
-  background: url("../assets/Committees BG/United\ Nations\ General\ Assembly.jpg")
-    no-repeat center / cover;
+  background: url("../assets/Committees BG/United\ Nations\ General\ Assembly.png")
+    no-repeat center ;
     
   }
   #UNSC .left{
   background: url("../assets/Committees BG/United\ Nations\ Security\ Council.jpg")
+    no-repeat center center ;
+
+}
+  #JRS .left{
+  background: url("../assets/Committees BG/Jobs\ Reset\ Summit.png")
     no-repeat center / cover;
 
 }
-  #G7 .left{
-  background: url("../assets/Committees BG/G7\ Advisory\ Committee.jpg")
-    no-repeat center / cover;
-
-}
-  #GDS .left{
-  background: url("../assets/Committees BG/Global\ Democracy\ Summit.jpg")
+  #G20 .left{
+  background: url("../assets/Committees BG/G20.jpg")
     no-repeat center / cover;
 
 }
   #GPS .left{
   background: url("../assets/Committees BG/Global\ Press\ Summit.jpg")
-    no-repeat center / cover;
+    no-repeat center center / cover;
 
 }
   #UNHRC .left{
@@ -74,8 +74,8 @@ html {
     no-repeat center / cover;
 
 }
-  #USHCHS .left{
-  background: url("../assets/Committees BG/United\ States\ House\ Committee\ on\ Homeland\ Security.jpg")
+  #JCC .left{
+  background: url("../assets/Committees BG/Joint\ Crissis\ Committee.jpeg")
     no-repeat center / cover;
 
 }
@@ -145,7 +145,7 @@ html {
   justify-content: center;
   padding: 40px 30px;
   color: white;
-  margin-left: -150px;
+  margin-left: -120px;
   z-index: 1;
 }
 .right2 h1 {
