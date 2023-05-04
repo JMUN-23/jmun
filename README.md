@@ -1,4 +1,4 @@
-<h1>Jaipuria Model United Nations<h1>
+<h1>Jaipuria Model United Nations</h1>
 
 This is the code for the website of JMUN '23.
 Made by - (click for profile)
