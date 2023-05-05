@@ -5,6 +5,7 @@ const sec = document.querySelector(".sec .numb");
 var timer = setInterval(() => {
     var currentDate = new Date().getTime();
     var launchDate = new Date('July 27, 2023 00:00:00').getTime();
+    console.log(launchDate);
     var duration = launchDate - currentDate;
     var days = Math.floor(duration / (1000 * 60 * 60 * 24));
     var hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -37,7 +38,7 @@ const resmin = document.querySelector(".resmin .resnumb");
 const ressec = document.querySelector(".ressec .resnumb");
 var restimer = setInterval(() => {
     var rescurrentDate = new Date().getTime();
-    var reslaunchDate = new Date('Jun 1, 2023 00:00:00').getTime();
+    var reslaunchDate = new Date('July 27, 2023 00:00:00').getTime();
     var resduration = reslaunchDate - rescurrentDate;
     var resdays = Math.floor(resduration / (1000 * 60 * 60 * 24));
     var reshours = Math.floor((resduration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
