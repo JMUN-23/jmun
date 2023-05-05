@@ -117,10 +117,17 @@
   @media screen and (max-device-width: 556px) {
    #mainBox{
     display: block;
+    height: auto;
    }
 
    .bottomBox .copyright{
-    padding-left: 60px;
+    padding-left: 20px;
+   }
+   .bottomBox p{
+    padding: 0px;
+   }
+   .created-by{
+    margin-left: -10px;
    }
    .bottomBox .created-by{
     margin-right: 10px;
