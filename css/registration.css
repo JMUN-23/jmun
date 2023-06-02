@@ -21,7 +21,7 @@ body{
 #main, .sec2{
     padding: 40px;
     /* padding-top: 12vh; */
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: rgb(197, 100, 44); */
     background-color: black;
 }
@@ -396,7 +396,7 @@ a{
   /* Note and committees */
 
   .sec2{
-    height: 180vh;
+    /* height: 180vh; */
     /* padding: 10vh 30px; */
   }
   .left2{

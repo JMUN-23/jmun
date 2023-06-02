@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPS Registration | JMUN'23</title>
+    <title>Delegate Registration | JMUN'23</title>
     <link rel="stylesheet" href="css/registration.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
-<body style="display: none;">
+<body>
     <div class="navvbar">
         <div class="logo reveal">
 
@@ -44,6 +44,8 @@
             </div>
             <div class="menu-bg" id="menu-bg"></div>
         </div>
+
+
         <div class="navv">
             <a href="index.html">Home</a>
             <div class="dropdown-menu">
@@ -61,27 +63,26 @@
         </div>
         <div class="right">
 
-            <a href="Delegates.html" class="active-nav">Register</a>
+            <a href="RegisterForm.html" class="active-nav">Register</a>
         </div>
         </nav>
     </div>
     <h1 class="sec-heading">
         GPS Registration
     </h1>
-    <section class="sec2">
+    <!-- <section class="sec2">
         <div class="left2">
             <h3>Note: </h3>
             <div class="notes">
-                <p>It is mandatory for all applicants to be vaccinated.</p>
-                <p>A delegate fee of INR 2,000 shall be charged.</p>
-                <p>Upon the submission of this form, you will recieve a mail containing details necessary to make the
-                    payment.</p>
-                <p>The payment has to be completed within a week of filling the form.</p>
-                <p>The Vaccination Certificate of the Applicant must be attached with the payment confirmation mail.
+                <p>1) The conference shall take place in school premises from 27th - 29th July, 2023 .</p>
+                <p>2)   There shall be a Mock Training session for delegates on 26th of July 2023.</p>
+                <p>3) Accomodation charges for outstation teams are excluded from the registeration fees. Payment options and accomodation charges will be shared once the participation in the conference is confirmed by the school.</p>
+                <p>4) Once the Registeration form has been submitted,  the delegation will be contacted by the Secreteriat and will be asked to make the payment</p>
+                <p>5) The Vaccination Certificate of the Applicant must be attached with the payment confirmation mail.
                 </p>
-                <p>Only after recieving the payment confirmation and vaccination certificate will the porfolio be
-                    allotted</p>
-                <p>In case of queries, feel free to reach out to</p>
+                <p>6)For the Global Press Summit,  the applicants will be asked to make the payment only after they are informed about their application being accepted</p>
+                <p>7) Minimum size of delegation is 8 delegates. The delegates may be from classes 7th to 12th </p>
+                <p>8) The Registeration fee for each delegate is 2500 Rs. and 1000 Rs. for each faculty advisor. This covers High tear and lunch on all 3 days along with stationery  </p>
             </div>
         </div>
         <div class="right2">
@@ -120,7 +121,7 @@
                     </span> </li>
             </ol>
         </div>
-    </section>
+    </section> -->
     <main id="main">
         <div class="container">
 
@@ -129,101 +130,91 @@
                     <img src="assets/logoTransparent.png" alt="JMUN 2023">
                 </div>
                 <div class="content">
-                    <h2>Delegate Registration</h2>
+                    <h2>GPS Registration</h2>
                     <p>
                         Follow us on instagram for updates
                     </p>
 
-                    <button class="btn-small"><i class="fa-brands fa-instagram"></i><span> Instagram</span> </button>
+                    <button class="btn-small"> <a href="https://instagram.com/jaipuriamun?igshid=MzRlODBiNWFlZA=="
+                            target="_blank"><i class="fa-brands fa-instagram"></i><span> Instagram </span> </a></button>
                 </div>
             </div>
             <div class="right-sec">
-                <form id="form1">
-                    <h3 class="form-heading">Personal Details</h1>
+                <form id="form" method="post"
+                    action="https://script.google.com/macros/s/AKfycbw51lCn1G76xR1dbwjakGueErnP9k_ASvRLr-vdfZLjRcLhsfagpo0Qroao_d0aCtaE/exec">
+                    <div id="form1">
+                        <h3 class="form-heading">Personal Details</h3>
                         <div class="input-data">
-                            <input type="text" required id="name">
+                            <input type="text" required id="name" name="name">
                             <div class="underline"></div>
                             <label for="name">Name</label>
                         </div>
                         <div class="input-data">
-                            <input type="email" required id="email">
+                            <input type="text" required id="class" name="class">
+                            <div class="underline"></div>
+                            <label for="class">Class</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="email" required id="email" name="email">
                             <div class="underline"></div>
                             <label for="email">Email</label>
                         </div>
                         <div class="input-data">
-                            <input type="number" required id="phone">
+                            <input type="number" required id="phone" name="phoneNumber">
                             <div class="underline"></div>
                             <label for="phone">Phone no.</label>
                         </div>
                         <div class="input-data">
-                            <input type="text" required id="school">
+                            <input type="text" required id="school" name="school">
                             <div class="underline"></div>
                             <label for="school">School</label>
                         </div>
-                        <div class="input-data">
-                            <input type="file" required id="picture">
-                            <div class="underline"></div>
-                            <label for="picture">Passport Size picture(Your name should be the file name)</label>
-                        </div>
+
                         <div class="btn-form">
                             <input class="btn-main" onclick="change()" type="button" value="Next">
                         </div>
-                </form>
-                <form action="#" id="form2">
-                    <h3 class="form-heading">Committee Preferences</h1>
-                        <div class="input-data">
-                            <input type="text" required>
-                            <div class="underline"></div>
-                            <label for="">MUN Expeience</label>
-                        </div>
-                        <label for="preference1">Committee Preference 1</label>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                        <select id="preference1">
-                            <option value="">Select an option&hellip;</option>
-                            <option value="United Nations General Assembly">United Nations General Assembly</option>
-                            <option value="United Nations Security Council">United Nations Security Council</option>
-                            <option value="United Nations Human Rights Council">United Nations Human Rights Council
-                            </option>
-                            <option value="Global Democracy Summit">Global Democracy Summit</option>
-                            <option value="Global Press Summit">Global Press Summit</option>
-                            <option value="United States House Committee on Homeland Security">United States House
-                                Committee on Homeland Security</option>
-                            <option value="G7 Advisory Committe">G7 Advisory Committe</option>
-                            <option value="Lok Sabha">Lok Sabha</option>
-                        </select>
-                        <label for="preference2">Committee Preference 2</label>
-                        <select id="preference2">
-                            <option value="">Select an option&hellip;</option>
-                            <option value="United Nations General Assembly">United Nations General Assembly</option>
-                            <option value="United Nations Security Council">United Nations Security Council</option>
-                            <option value="United Nations Human Rights Council">United Nations Human Rights Council
-                            </option>
-                            <option value="Global Democracy Summit">Global Democracy Summit</option>
-                            <option value="Global Press Summit">Global Press Summit</option>
-                            <option value="United States House Committee on Homeland Security">United States House
-                                Committee on Homeland Security</option>
-                            <option value="G7 Advisory Committe">G7 Advisory Committe</option>
-                            <option value="Lok Sabha">Lok Sabha</option>
-                        </select>
-                        <label for="preference3">Committee Preference 3</label>
-                        <select id="preference3">
-                            <option value="">Select an option&hellip;</option>
-                            <option value="United Nations General Assembly">United Nations General Assembly</option>
-                            <option value="United Nations Security Council">United Nations Security Council</option>
-                            <option value="United Nations Human Rights Council">United Nations Human Rights Council
-                            </option>
-                            <option value="Global Democracy Summit">Global Democracy Summit</option>
-                            <option value="Global Press Summit">Global Press Summit</option>
-                            <option value="United States House Committee on Homeland Security">United States House
-                                Committee on Homeland Security</option>
-                            <option value="G7 Advisory Committe">G7 Advisory Committe</option>
-                            <option value="Lok Sabha">Lok Sabha</option>
-                        </select>
-                        <div class="btn-form2">
 
-                            <button class="btn-light" onclick="returnBack()">Go Back</i></button>
-                            <button class="btn-main"><a href="submit.html"> Submit</a></button>
+                    </div>
+                    <div id="form2">
+
+                        <div class="input-data f-small">
+                            <input type="text" required name="noOfMun">
+                            <div class="underline"></div>
+                            <label for="">Previous MUN experience and where-</label>
                         </div>
+                        <div class="input-data f-small">
+                            <input type="text" required name="noOfBestDel">
+                            <!-- <textarea name="input" cols="30" rows="10"></textarea> -->
+                            <div class="underline"></div>
+                            <label for="">Awards(if any) and where-</label>
+                        </div>
+                        <label for="preference1">What would you want to join GPS as-
+                        </label>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                        <select id="preference1" required name="com1">
+                            <option value="">Select an option&hellip;</option>
+                            <option value="Reporter">Reporter
+                            </option>
+                            <option value="Videographer">Videographer
+                            </option>
+                            <option value="Photographer">Photographer
+                            </option>
+                            <option value="Caricaturist">Caricaturist</option>
+                            
+                        </select>
+                        
+                        <div class="btn-form2">
+                            
+                            <input class="btn-main" onclick="returnBack()" type="button" value="Go back">
+                            <!-- <input class="btn-main" onclick="change2()" type="button" value="Next"> -->
+                            <input class="btn-main" type="submit" value="Submit">
+                        </div>
+                    </div>
+                    <!-- <div id="hid_submit" style="position: absolute; top: 100; left: 100;">
+                        <input type="text" required name="com1" id="com1">
+                        <input type="text" required name="com2" id="com2">
+                        <input type="text" required name="com3" id="com3">
+                    </div> -->
                 </form>
             </div>
         </div>
@@ -248,10 +239,14 @@
         <div class="topBox" id="secondBox">
             <img src="assets/logoTransparent.png" height="80px" width="160px">
             <div class="socials">
-                <a href="https://instagram.com/jaipuriamun?igshid=MzRlODBiNWFlZA=="><img class="soc_img" src="./assets/footer_logo/instagram.png" alt=""></a>
-               <a href="https://www.facebook.com/TheJMUN/"><img class="soc_img" src="./assets/footer_logo/facebook.png" alt=""></a>
-               <a href="https://www.snapchat.com/add/jaipuriamun"><img class="soc_img" src="./assets/footer_logo/snapchat.png" alt=""></a>
-               <a href="https://twitter.com/the_jmun?t=oytd97XKFh-a7uGALlHnyA&s=08"><img class="soc_img" src="./assets/footer_logo/twitter.png" alt=""></a>
+                <a href="https://instagram.com/jaipuriamun?igshid=MzRlODBiNWFlZA=="><img class="soc_img"
+                        src="./assets/footer_logo/instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/TheJMUN/"><img class="soc_img" src="./assets/footer_logo/facebook.png"
+                        alt=""></a>
+                <a href="https://www.snapchat.com/add/jaipuriamun"><img class="soc_img"
+                        src="./assets/footer_logo/snapchat.png" alt=""></a>
+                <a href="https://twitter.com/the_jmun?t=oytd97XKFh-a7uGALlHnyA&s=08"><img class="soc_img"
+                        src="./assets/footer_logo/twitter.png" alt=""></a>
             </div>
         </div>
         <div class="topBox" id="thirdBox">
@@ -260,8 +255,8 @@
         </div>
         <div class="bottomBox">
             <div class="copyright">
-                <p>JMUN 2023 | All rights reserved</p>
-                <p>Akshat Goel & Harsh Govind - JMUN'23</p>
+                <p>JMUN 2023 </p>
+                <p>Akshat Goel & Harsh Govind | JMUN 2023</p>
             </div>
             <!-- <div class="created-by">
                 <p> Website created by: <strong><br><a href="https://www.instagram.com/ag.akshatt/">Akshat Goel</a> <br>
@@ -273,20 +268,37 @@
         </div>
     </div>
 
+
     <script>
-        alert("Please Note:- Our forms are currently not taking any registrations, we will soon notify about it")
-    document.location.replace("./RegisterForm.html");
+
         let form1 = document.getElementById("form1");
         let form2 = document.getElementById("form2");
+        let form3 = document.getElementById("form3");
+
+        var com1 = document.getElementById('com1');
+        var com1 = document.getElementById('com2');
+        var com1 = document.getElementById('com3');
+
+        function change2() {
+            form1.style.display = "none"
+            form2.style.display = "none"
+            form3.style.display = "block"
+        }
         function change() {
             form1.style.display = "none";
             form2.style.display = "block";
-            console.log("G")
+            form3.style.display = "none"
         }
 
         function returnBack() {
-            form1.style.display = "block";
             form2.style.display = "none";
+            form1.style.display = "block";
+            form3.style.display = "none";
+        }
+        function returnBack2() {
+            form2.style.display = "block";
+            form1.style.display = "none";
+            form3.style.display = "none";
         }
 
         $('select').each(function () {
@@ -350,6 +362,27 @@
                 $list.hide();
             });
 
+        });
+
+        window.addEventListener("load", function () {
+            const form = document.getElementById('form');
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                try {
+                    fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                    .then(() => {
+                        document.location.replace("./submit.html");
+                    })
+                }
+                catch(err){
+                    document.location.replace("./error.html");
+                }
+            });
         });
 
         function menuOnClick() {
