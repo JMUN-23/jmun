@@ -40,6 +40,10 @@ body{
     display: none;
     transition: all 0.5s;
 }
+#form3{
+    display: none;
+    transition: all 0.5s;
+}
 .left, .right-sec{
     flex-basis: 50%;
     padding: 10px 10px;
@@ -227,7 +231,6 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0;
   }
   .btn-form{
     display: flex;
@@ -382,6 +385,13 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 6rem;
+  }
+
+  .f-small label{
+    font-size: 15px;
+  }
+  .f-small input{
+    margin: 33px 0;
   }
   /* Note and committees */
 

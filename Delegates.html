@@ -74,7 +74,7 @@
         <div class="left2">
             <h3>Note: </h3>
             <div class="notes">
-                <p>1) It is mandatory for all applicants to be vaccinated.</p>
+                <p>1) The conference shall take place in school premises </p>
                 <p>2) A delegate fee of INR 2,000 shall be charged.</p>
                 <p>3) Upon the submission of this form, you will recieve a mail containing details necessary to make the
                     payment.</p>
@@ -136,7 +136,7 @@
                         Follow us on instagram for updates
                     </p>
 
-                    <button class="btn-small"><i class="fa-brands fa-instagram"></i><span> Instagram</span> </button>
+                    <button class="btn-small"> <a href="https://instagram.com/jaipuriamun?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fa-brands fa-instagram"></i><span>  Instagram </span> </a></button>
                 </div>
             </div>
             <div class="right-sec">
@@ -162,69 +162,109 @@
                             <div class="underline"></div>
                             <label for="school">School</label>
                         </div>
-                        <div class="input-data">
-                            <input type="file" required id="picture">
-                            <div class="underline"></div>
-                            <label for="picture">Passport Size picture(Your name should be the file name)</label>
-                        </div>
+                        
                         <div class="btn-form">
                             <input class="btn-main" onclick="change()" type="button" value="Next">
                         </div>
                 </form>
                 <form action="#" id="form2">
-                    <h3 class="form-heading">Committee Preferences</h1>
-                        <div class="input-data">
+                    <h3 class="form-heading" style="margin: none;">Previous MUN Experience</h1>
+                        
+                        <div class="input-data f-small">
                             <input type="text" required>
                             <div class="underline"></div>
-                            <label for="">MUN Expeience</label>
+                            <label for="">Number of MUNs and where</label>
                         </div>
+                        <div class="input-data f-small">
+                            <input type="text" required>
+                            <!-- <textarea name="input" cols="30" rows="10"></textarea> -->
+                            <div class="underline"></div>
+                            <label for="">Number of Best Delegates and where</label>
+                        </div>
+                        <div class="input-data f-small">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Number of High Commendations and where</label>
+                        </div>
+                        <div class="input-data f-small">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Number of Special Mentions and where</label>
+                        </div>
+                        <div class="input-data f-small">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Number of Verbal Mentions and where</label>
+                        </div>
+                        <div class="input-data f-small">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Other</label>
+                        </div>
+                        <div class="input-data f-small">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Prior Executive Board Experience (if any)</label>
+                        </div>
+
+                        <div class="btn-form2">
+
+                            <input class="btn-main"  onclick="returnBack()" type="button" value="Go back">
+                            <input class="btn-main" onclick="change2()" type="submit" value="Next">
+                        </div>
+                    </form>
+                    <form action="submit.html" id="form3">
+                        <h3 class="form-heading">Committee Preferences</h1>
                         <label for="preference1">Committee Preference 1</label>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                        <select id="preference1">
+                        <select id="preference1" required>
                             <option value="">Select an option&hellip;</option>
                             <option value="United Nations General Assembly">United Nations General Assembly</option>
                             <option value="United Nations Security Council">United Nations Security Council</option>
                             <option value="United Nations Human Rights Council">United Nations Human Rights Council
                             </option>
-                            <option value="Global Democracy Summit">Global Democracy Summit</option>
+                            <option value="Global Democracy Summit">Jobs Reset Summit</option>
                             <option value="Global Press Summit">Global Press Summit</option>
-                            <option value="United States House Committee on Homeland Security">United States House
-                                Committee on Homeland Security</option>
-                            <option value="G7 Advisory Committe">G7 Advisory Committe</option>
+                            <option value="United States House Committee on Homeland Security">Joint Crisis Committee</option>
+                            <option value="G7 Advisory Committe">G20 Summit</option>
                             <option value="Lok Sabha">Lok Sabha</option>
                         </select>
                         <label for="preference2">Committee Preference 2</label>
-                        <select id="preference2">
+                        <select id="preference2" required>
                             <option value="">Select an option&hellip;</option>
                             <option value="United Nations General Assembly">United Nations General Assembly</option>
                             <option value="United Nations Security Council">United Nations Security Council</option>
                             <option value="United Nations Human Rights Council">United Nations Human Rights Council
                             </option>
-                            <option value="Global Democracy Summit">Global Democracy Summit</option>
+                            <option value="Global Democracy Summit">Jobs Reset Summit</option>
                             <option value="Global Press Summit">Global Press Summit</option>
-                            <option value="United States House Committee on Homeland Security">United States House
-                                Committee on Homeland Security</option>
-                            <option value="G7 Advisory Committe">G7 Advisory Committe</option>
+                            <option value="United States House Committee on Homeland Security">Joint Crisis Committee</option>
+                                <option value="G7 Advisory Committe">G20 Summit</option>
+                                <option value="Lok Sabha">Lok Sabha</option>
+                            </select>
+                            <label for="preference3">Committee Preference 3</label>
+                            <select id="preference3" required>
+                                <option value="">Select an option&hellip;</option>
+                                <option value="United Nations General Assembly">United Nations General Assembly</option>
+                                <option value="United Nations Security Council">United Nations Security Council</option>
+                                <option value="United Nations Human Rights Council">United Nations Human Rights Council
+                                </option>
+                                <option value="Global Democracy Summit">Jobs Reset Summit</option>
+                                <option value="Global Press Summit">Global Press Summit</option>
+                                <option value="United States House Committee on Homeland Security">Joint Crisis Committee</option>
+                            <option value="G7 Advisory Committe">G20 Summit</option>
                             <option value="Lok Sabha">Lok Sabha</option>
                         </select>
-                        <label for="preference3">Committee Preference 3</label>
-                        <select id="preference3">
-                            <option value="">Select an option&hellip;</option>
-                            <option value="United Nations General Assembly">United Nations General Assembly</option>
-                            <option value="United Nations Security Council">United Nations Security Council</option>
-                            <option value="United Nations Human Rights Council">United Nations Human Rights Council
-                            </option>
-                            <option value="Global Democracy Summit">Global Democracy Summit</option>
-                            <option value="Global Press Summit">Global Press Summit</option>
-                            <option value="United States House Committee on Homeland Security">United States House
-                                Committee on Homeland Security</option>
-                            <option value="G7 Advisory Committe">G7 Advisory Committe</option>
-                            <option value="Lok Sabha">Lok Sabha</option>
-                        </select>
+                        <div class="input-data">
+                            <input type="file" required id="picture">
+                            <div class="underline"></div>
+                            <label for="picture">Passport Size picture(Your name should be the file name)</label>
+                        </div>
                         <div class="btn-form2">
 
-                            <button class="btn-light" onclick="returnBack()">Go Back</i></button>
-                            <button class="btn-main"><a href="submit.html"> Submit</a></button>
+                            <input class="btn-main"  onclick="returnBack2()" type="button" value="Go back">
+                            <input class="btn-main"  type="submit" value="Submit">
+                            <!-- <button class="btn-main"><a href="submit.html"> Submit</a></button> -->
                         </div>
                 </form>
             </div>
@@ -263,30 +303,45 @@
         <div class="bottomBox">
             <div class="copyright">
                 <p>&copy JMUN 2023 | All rights reserved</p>
+                <p>Website Created By:- Akshat Goel and Harsh Govind</p>
             </div>
-            <div class="created-by">
+            <!-- <div class="created-by">
                 <p> Website created by: <strong><br><a href="https://www.instagram.com/ag.akshatt/">Akshat Goel</a> <br>
                     <a href="https://www.instagram.com/_lonepair._/">Harsh Govind</a></strong>
                     <br>
                     UI/UX by:- <br>Devansh Agarwal
                 </p>
-            </div>
-        </div>
+            </div> -->
+        </div> 
     </div>
 
 
     <script>
         let form1 = document.getElementById("form1");
         let form2 = document.getElementById("form2");
+        let form3 = document.getElementById("form3");
+
+        function change2(){
+            form1.style.display = "none"
+            form2.style.display = "none"
+            form3.style.display = "block"
+        }
         function change() {
             form1.style.display = "none";
             form2.style.display = "block";
+            form3.style.display = "none"
             console.log("G")
         }
 
         function returnBack() {
-            form1.style.display = "block";
             form2.style.display = "none";
+            form1.style.display = "block";
+            form3.style.display = "none";
+        }
+        function returnBack2() {
+            form2.style.display = "block";
+            form1.style.display = "none";
+            form3.style.display = "none";
         }
 
         $('select').each(function () {

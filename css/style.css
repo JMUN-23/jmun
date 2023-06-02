@@ -525,7 +525,7 @@ content: "";
         width: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7)100%, rgba(0, 0, 0, 0.7)0%), url("bg.jpg");
         background-size: 250%;
-        background-position: center;
+        background-position: 52% 80%;
         background-attachment: fixed;
         background-repeat: no-repeat;
         overflow-x: hidden;
@@ -723,7 +723,10 @@ content: "";
     .rescountdown .timer .resnumb {
         font-weight: 400;
     }
-
+    #reshead{
+        background-position: 52% 63%;
+        background-size: 400% !important;
+    }
 
     .backimage{
         height: 60vh;
