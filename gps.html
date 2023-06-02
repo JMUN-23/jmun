@@ -70,58 +70,7 @@
     <h1 class="sec-heading">
         GPS Registration
     </h1>
-    <!-- <section class="sec2">
-        <div class="left2">
-            <h3>Note: </h3>
-            <div class="notes">
-                <p>1) The conference shall take place in school premises from 27th - 29th July, 2023 .</p>
-                <p>2)   There shall be a Mock Training session for delegates on 26th of July 2023.</p>
-                <p>3) Accomodation charges for outstation teams are excluded from the registeration fees. Payment options and accomodation charges will be shared once the participation in the conference is confirmed by the school.</p>
-                <p>4) Once the Registeration form has been submitted,  the delegation will be contacted by the Secreteriat and will be asked to make the payment</p>
-                <p>5) The Vaccination Certificate of the Applicant must be attached with the payment confirmation mail.
-                </p>
-                <p>6)For the Global Press Summit,  the applicants will be asked to make the payment only after they are informed about their application being accepted</p>
-                <p>7) Minimum size of delegation is 8 delegates. The delegates may be from classes 7th to 12th </p>
-                <p>8) The Registeration fee for each delegate is 2500 Rs. and 1000 Rs. for each faculty advisor. This covers High tear and lunch on all 3 days along with stationery  </p>
-            </div>
-        </div>
-        <div class="right2">
-            <h3>Committees: </h3>
-            <ol>
-                <li><span class="heading">G20 Summit:- </span> <span class="text">
-                        “Deliberating upon the Obstructive Strategies Employed by the Anti-Green Energy Groups and their
-                        Effect upon the Green Energy Revolution"
-                    </span> </li>
-                <li><span class="heading">Global Press Summit (GPS): </span> <span class="text">
-                        “Media Ownership Affecting Media Plurality.”
-                    </span> </li>
-                <li><span class="heading">The Joint Crisis Committee: </span> <span class="text">
-                        "The Sino-Indian War, 1962."
-                    </span> </li>
-                <li><span class="heading">Jobs Reset Summit (JRS): </span> <span class="text">
-                        “Deliberating upon the future of Gig and Platform economy and its aspects.”
-                    </span> </li>
-                <li><span class="heading">Lok Sabha (LS): </span> <span class="text">
-                        1) “Discussing the withdrawal of the Personal Data Protection Bill, 2019 and deliberating upon
-                        the new draft of the Digital Data Protection Bill,2022.” <br>
-                        2) “Discussing the proposal for same marriage and civil laws with special reference to The
-                        Prohibition of Child Marriage (Amendment) Bill,2021 and its overriding effect over other
-                        marriage laws”
-                    </span> </li>
-                <li><span class="heading">The United Nations General Assembly (DISEC): </span> <span class="text">
-                        "Deliberating upon the Ethics of Modern Warfare with special emphasis on the Third Revolution in
-                        Warfare."
-                    </span> </li>
-                <li><span class="heading">United Nations Human Rights Council (UNHRC): </span> <span class="text">
-                        “Addressing the increased exploitation of Human Resources in the Mining Sector”
 
-                    </span> </li>
-                <li><span class="heading">United Nations Security Council (UNSC): </span> <span class="text">
-                        “The Syrian Crisis, 2026"
-                    </span> </li>
-            </ol>
-        </div>
-    </section> -->
     <main id="main">
         <div class="container">
 
@@ -140,8 +89,7 @@
                 </div>
             </div>
             <div class="right-sec">
-                <form id="form" method="post"
-                    action="https://script.google.com/macros/s/AKfycbzmmb_yng7EC-tRYq9nYjiSeXgOfWuMzCeYm7-laoiPf5NpL-Dv5GlxOfSqnmzh3vvtKQ/exec">
+                <form id="form" method="post" action="https://script.google.com/macros/s/AKfycbwGlxNt-yO5FM_hGi22M1Ci9cGvZ-SRWuDFh4wBpmNL0Q_PV4-hMuT59ujH3DISf_k4/exec">
                     <div id="form1">
                         <h3 class="form-heading">Personal Details</h3>
                         <div class="input-data">
@@ -261,13 +209,6 @@
                 <p>JMUN 2023 </p>
                 <p>Akshat Goel & Harsh Govind | JMUN 2023</p>
             </div>
-            <!-- <div class="created-by">
-                <p> Website created by: <strong><br><a href="https://www.instagram.com/ag.akshatt/">Akshat Goel</a> <br>
-                    <a href="https://www.instagram.com/_lonepair._/">Harsh Govind</a></strong>
-                    <br>
-                    UI/UX by:- <br>Devansh Agarwal
-                </p>
-            </div> -->
         </div>
     </div>
 
@@ -367,25 +308,25 @@
 
         });
 
-        window.addEventListener("load", function () {
-            const form = document.getElementById('form');
-            form.addEventListener("submit", function (e) {
-                e.preventDefault();
-                const data = new FormData(form);
-                const action = e.target.action;
-                try {
-                    fetch(action, {
+        const form = document.getElementById('form');
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            console.log("hello");
+            try {
+                fetch(action, {
                     method: 'POST',
                     body: data,
                 })
                     .then(() => {
                         document.location.replace("./submit.html");
+                        console.log("okk")
                     })
-                }
-                catch(err){
-                    document.location.replace("./error.html");
-                }
-            });
+            }
+            catch (err) {
+                document.location.replace("./error.html");
+            }
         });
 
         function menuOnClick() {
