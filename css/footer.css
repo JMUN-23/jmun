@@ -84,6 +84,11 @@
     height: 18vh;
   }
 
+  .logos img{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+filter: invert(100%);
+height: 15vh;
+
   .bottomBox p {
     margin: 0;
     padding: 10px;
@@ -141,4 +146,17 @@
    .bottomBox .created-by{
     margin-right: 10px;
    }
+}
+
+@media screen and (min-device-width: 168px) and (max-device-width: 1300px) {
+  html {
+      font-size: 10px;
+  }
+
+  .logos{
+      flex-direction: column;
+  }
+  .logos img{
+      height: 20vh;
+  }
 }
