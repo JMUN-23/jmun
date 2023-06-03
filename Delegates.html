@@ -139,7 +139,7 @@
             </div>
             <div class="right-sec">
                 <form id="form" method="post"
-                    action="https://script.google.com/macros/s/AKfycbw51lCn1G76xR1dbwjakGueErnP9k_ASvRLr-vdfZLjRcLhsfagpo0Qroao_d0aCtaE/exec">
+                    action="https://script.google.com/macros/s/AKfycbw51lCn1G76xR1dbwjakGueErnP9k_ASvRLr-vdfZLjRcLhsfagpo0Qroao_d0aCtaE/exec" onsubmit="return ValidateForm()">
                     <div id="form1">
                         <h3 class="form-heading">Personal Details</h3>
                         <div class="input-data">
@@ -157,7 +157,7 @@
                             <div class="underline"></div>
                             <label for="email">Email</label>
                         </div>
-                        <div class="input-data">
+                        <div class="input-data" id="phone">
                             <input type="number" required id="phone" name="phoneNumber">
                             <div class="underline"></div>
                             <label for="phone">Phone no.</label>
@@ -315,14 +315,10 @@
         <div class="topBox" id="secondBox">
             <img src="assets/logoTransparent.png" height="80px" width="160px">
             <div class="socials">
-                <a href="https://instagram.com/jaipuriamun?igshid=MzRlODBiNWFlZA=="><img class="soc_img"
-                        src="./assets/footer_logo/instagram.png" alt=""></a>
-                <a href="https://www.facebook.com/TheJMUN/"><img class="soc_img" src="./assets/footer_logo/facebook.png"
-                        alt=""></a>
-                <a href="https://www.snapchat.com/add/jaipuriamun"><img class="soc_img"
-                        src="./assets/footer_logo/snapchat.png" alt=""></a>
-                <a href="https://twitter.com/the_jmun?t=oytd97XKFh-a7uGALlHnyA&s=08"><img class="soc_img"
-                        src="./assets/footer_logo/twitter.png" alt=""></a>
+                <a href="https://instagram.com/jaipuriamun?igshid=MzRlODBiNWFlZA=="><img class="soc_img" src="./assets/footer_logo/instagram.png" alt=""></a>
+               <a href="https://www.facebook.com/TheJMUN/"><img class="soc_img" src="./assets/footer_logo/facebook.png" alt=""></a>
+               <a href="https://www.snapchat.com/add/jaipuriamun"><img class="soc_img" src="./assets/footer_logo/snapchat.png" alt=""></a>
+               <a href="https://twitter.com/the_jmun?t=oytd97XKFh-a7uGALlHnyA&s=08"><img class="soc_img" src="./assets/footer_logo/twitter.png" alt=""></a>
             </div>
         </div>
         <div class="topBox" id="thirdBox">
@@ -332,6 +328,7 @@
                 <img src="assets/partners/p2.png" alt="">
             </div>
         </div>
+        <div style="background-color: black;"></div>
         <div class="bottomBox">
             <div class="copyright">
                 <p>JMUN 2023 </p>
@@ -345,6 +342,7 @@
                 </p>
             </div> -->
         </div>
+        <div style="background-color: black;"></div>
     </div>
     <script src="./js/formval.js"></script>
 
@@ -365,7 +363,7 @@
         }
         function change() {
             form1.style.display = "none";
-            form2.style.display = "block";
+            form2.style.display = "block";ValidateForm()
             form3.style.display = "none"
         }
 
@@ -470,6 +468,7 @@
             document.getElementById("menu-bg").classList.toggle("change-bg");
         }
     </script>
+    <script src="js/formval.js"></script>
 </body>
 
 </html>
