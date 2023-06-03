@@ -89,7 +89,8 @@
                 </div>
             </div>
             <div class="right-sec">
-                <form id="form" method="post" action="https://script.google.com/macros/s/AKfycbwGlxNt-yO5FM_hGi22M1Ci9cGvZ-SRWuDFh4wBpmNL0Q_PV4-hMuT59ujH3DISf_k4/exec">
+                <form id="form" method="post" action="https://script.google.com/macros/s/AKfycbwGlxNt-yO5FM_hGi22M1Ci9cGvZ-SRWuDFh4wBpmNL0Q_PV4-hMuT59ujH3DISf_k4/exec" onsubmit="return ValidateForm()"
+                >
                     <div id="form1">
                         <h3 class="form-heading">Personal Details</h3>
                         <div class="input-data">
@@ -160,7 +161,7 @@
 
                             <input class="btn-main" onclick="returnBack()" type="button" value="Go back">
                             <!-- <input class="btn-main" onclick="change2()" type="button" value="Next"> -->
-                            <input class="btn-main" type="submit" value="Submit">
+                            <input class="btn-main" type="submit" value="Submit" id="submit">
                         </div>
                     </div>
                     <!-- <div id="hid_submit" style="position: absolute; top: 100; left: 100;">
@@ -222,6 +223,8 @@
         <div style="background-color: black;"></div>
     </div>
 
+
+    <script src="js/formval.js"></script>
 
     <script>
 

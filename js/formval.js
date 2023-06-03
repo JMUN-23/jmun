@@ -12,12 +12,15 @@ function ValidateForm(){
     var email = document.forms["form"]["email"].value;
     if(email.includes(".com") == false){
         seterror("email", "Email is invalid")
-
+        returnVal = false;
     }
     if(phone.length != 10){
         seterror("phone", "Phone number should have 10 digits")
+        returnVal = false;
     }
     console.log(phone)
+
+    return returnVal;
 }
 
 function seterror(id, error){
