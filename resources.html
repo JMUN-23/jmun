@@ -1,50 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partners | JMUN'23</title>
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="shortcut icon" href="./assets/whitelogo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Generica;
             letter-spacing: 1px;
         }
-        body{
+
+        body {
             background-color: black;
             overflow-x: hidden;
         }
-        #main{
+
+        #main {
             padding-top: 10vh;
-            height: 90vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
-        .sec-heading{
+
+        .sec-heading {
             font-size: 7rem;
-    /* color: white; */
-    background-image: linear-gradient(90deg, #5fc9fa, #9752eb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: 1;
+            /* color: white; */
+            background-image: linear-gradient(90deg, #5fc9fa, #9752eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: 1;
             text-align: center;
+            padding-top:12vh !important;
+
+        }
+
+        .cards{
+            grid-template-rows: 1fr 1fr !important;
+            grid-template-columns: 1fr 1fr !important;
+            width: 80% !important;
+        }
+
+        .card{
+            cursor: default !important;
+            /* width: 70% !important; */
+
+            display: flex !important;
+        }
+
+        .subhead{
+            font-size: 4rem !important;
+        }
+
+        .card img{
+            height: 75%;
+            width: 100%;
+            padding: 15px 15px;
+        }
+
+        .card p{
+            text-decoration: underline;
+            /* justify-self: left !important; */
         }
 
         @media screen and (min-device-width: 168px) and (max-device-width: 1300px) {
-            html{
+            html {
                 font-size: 10px;
             }
-        }        
+        }
     </style>
 </head>
+
 <body>
 
     <div class="navvbar">
@@ -52,7 +88,7 @@
             <img src="./assets/logoTransparent.png" alt="">
             <a href="index.html"></a>
         </div>
-        
+
         <div id="menu">
 
             <div id="menu-bar" onclick="menuOnClick()">
@@ -81,16 +117,16 @@
 
 
         <div class="navv">
-            <a href="index.html" >Home</a>
+            <a href="index.html">Home</a>
             <div class="dropdown-menu">
                 <a href="#" class="menu-btn ">About</a>
                 <!-- <button class="menu-btn">Open <</button> -->
                 <div class="menu-content">
-                <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
-                <a class="links-hidden" href="about.html">Meet The Team</a>
+                    <a class="links-hidden" href="school.html">Seth M.R. Jaipuria School</a>
+                    <a class="links-hidden" href="about.html">Meet The Team</a>
                 </div>
             </div>
-            
+
             <a href="partners.html">Partners</a>
             <a href="resources.html" class="active-nav">Resources</a>
             <a href="committees.html">Committees</a>
@@ -101,65 +137,105 @@
         </div>
         </nav>
     </div>
-<section id="main">
-    <h1 class="sec-heading">Will be out soon.</h1>
-</section>
+    <section id="main">
+        <!-- <h1 class="sec-heading">Resources</h1> -->
+        <h3 class="sec-heading">Background Guides</h3>
+        <div id="cards_secreteriat">
+            <div class="cards">
 
-<div id="mainBox">
-    <div class="topBox" id="firstBox">
-        <h3 class="footer-heading">Conference Dates </h3>
-        <p class="foot-sechead">27th. 28th. 29th. July. 2023.
-        </p>
-        <div class="address">
-            <i class="fa-solid fa-location-dot"></i>
-            <p class="foot-text school">
-                Seth M.R. Jaipuria School
-                <br>
-                Vineet Khand, Gomti Nagar,
-                <br>
-                Lucknow – 226010, U.P., India
+                <div class="card">
+                    <img src="assets/JCC.png" alt="">
+                    <div class="content">
+                        <h2>Joint Crisis Committee</h2>
+                        <p><a target="_blank" href="https://drive.google.com/file/d/1bapgFRSC-68G0t98CkgfSP7IETB4IgZa/view?usp=sharing">Download Here</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/JRS.png" alt="">
+                    <div class="content">
+                        <h2>Job Reset Committee</h2>
+                        <p><a target="_blank" href="https://drive.google.com/file/d/1h24Y7kAWP7ABGVcqdXKBqAhtxYomXQzp/view?usp=sharing">Download Here</a></p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img src="assets/JMUN.png" alt="">
+                    <div class="content">
+                        <h2>United Nations General Assembly</h2>
+                        <p><a target="_blank" href="https://drive.google.com/file/d/1W6wkZumHWHHyKDdt2a9dY_RJQuKqLiUe/view?usp=sharing">Download Here</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/JMUN.png" alt="">
+                    <div class="content">
+                        <h2>United Nations Security Counsil</h2>
+                        <p><a target="_blank" href="https://drive.google.com/file/d/1U7luWD-BKeaxB20ryOJmaflMlXrkZAAI/view?usp=sharing">Download Here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="mainBox">
+        <div class="topBox" id="firstBox">
+            <h3 class="footer-heading">Conference Dates </h3>
+            <p class="foot-sechead">27th. 28th. 29th. July. 2023.
             </p>
+            <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="foot-text school">
+                    Seth M.R. Jaipuria School
+                    <br>
+                    Vineet Khand, Gomti Nagar,
+                    <br>
+                    Lucknow – 226010, U.P., India
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="topBox" id="secondBox">
-        <img src="assets/logoTransparent.png" height="80px" width="160px">
-        <div class="socials">
-            <a href="https://instagram.com/jaipuriamun?igshid=MzRlODBiNWFlZA=="><img class="soc_img" src="./assets/footer_logo/instagram.png" alt=""></a>
-           <a href="https://www.facebook.com/TheJMUN/"><img class="soc_img" src="./assets/footer_logo/facebook.png" alt=""></a>
-           <a href="https://www.snapchat.com/add/jaipuriamun"><img class="soc_img" src="./assets/footer_logo/snapchat.png" alt=""></a>
-           <a href="https://twitter.com/the_jmun?t=oytd97XKFh-a7uGALlHnyA&s=08"><img class="soc_img" src="./assets/footer_logo/twitter.png" alt=""></a>
+        <div class="topBox" id="secondBox">
+            <img src="assets/logoTransparent.png" height="80px" width="160px">
+            <div class="socials">
+                <a href="https://instagram.com/jaipuriamun?igshid=MzRlODBiNWFlZA=="><img class="soc_img"
+                        src="./assets/footer_logo/instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/TheJMUN/"><img class="soc_img" src="./assets/footer_logo/facebook.png"
+                        alt=""></a>
+                <a href="https://www.snapchat.com/add/jaipuriamun"><img class="soc_img"
+                        src="./assets/footer_logo/snapchat.png" alt=""></a>
+                <a href="https://twitter.com/the_jmun?t=oytd97XKFh-a7uGALlHnyA&s=08"><img class="soc_img"
+                        src="./assets/footer_logo/twitter.png" alt=""></a>
+            </div>
         </div>
-    </div>
-    <div class="topBox" id="thirdBox">
-        <h3 class="footer-heading">Our Partners</h3>
-        <div class="logos">
-            <img src="assets/partners/p1.png" alt="">
-            <img src="assets/partners/p2.png" alt="">
+        <div class="topBox" id="thirdBox">
+            <h3 class="footer-heading">Our Partners</h3>
+            <div class="logos">
+                <img src="assets/partners/p1.png" alt="">
+                <img src="assets/partners/p2.png" alt="">
+            </div>
         </div>
-    </div>
-    <div style="background-color: black;"></div>
-    <div class="bottomBox">
-        <div class="copyright">
-            <p>JMUN 2023 </p>
-            <p>Akshat Goel & Harsh Govind | JMUN 2023</p>
-        </div>
-        <!-- <div class="created-by">
+        <div style="background-color: black;"></div>
+        <div class="bottomBox">
+            <div class="copyright">
+                <p>JMUN 2023 </p>
+                <p>Akshat Goel & Harsh Govind | JMUN 2023</p>
+            </div>
+            <!-- <div class="created-by">
             <p> Website created by: <strong><br><a href="https://www.instagram.com/ag.akshatt/">Akshat Goel</a> <br>
                 <a href="https://www.instagram.com/_lonepair._/">Harsh Govind</a></strong>
                 <br>
                 UI/UX by:- <br>Devansh Agarwal
             </p>
         </div> -->
+        </div>
+        <div style="background-color: black;"></div>
     </div>
-    <div style="background-color: black;"></div>
-</div>
-<script>
+    <script>
 
-    function menuOnClick() {
-        document.getElementById("menu-bar").classList.toggle("change");
-        document.getElementById("side-nav").classList.toggle("change");
-        document.getElementById("menu-bg").classList.toggle("change-bg");
-    }
+        function menuOnClick() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("side-nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
     </script>
 </body>
+
 </html>
